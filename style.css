@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.carrossel{
+    padding-top: 70px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 0px;
+}
+
+.title{
+    vertical-align: center;
+    text-shadow: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-shadow: #000 1px 0 10px;
+}
+
+.quem-somos-nos{
+    padding-top: 2.5%;
+    margin-left: 50px;
+}
+
+#fonte-jardim-sensorial{
+    float: left;
+    height: 390px;
+    margin-left: 4%;
+  
+}
+
+#jardim-sensorial-texto{
+    margin-left: 30%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+.botao-saiba-mais{
+    margin-top: 0.2%;
+    font-family: "Inter";
+    border-radius: 15px;
+}
+
+#btn-cultura-maker{
+    margin-left: 91.2%;
+    margin-top: 2%;
+}
+.gray-area{
+    background-color:#ECECEC;
+    height: 395px;
+}
+
+
+#jardim-sensorial-titulo{
+    color: #2A9B39;
+    font-family: "Inter", serif;
+    font-weight: bolder;
+    font-size: 38px;
+    width: 52%;
+
+}
+
+#jardim-sensorial-description{
+    color: black;
+    width: 60%;
+    font-family: "Arimo", sans-serif;
+    margin-top: 2.3%;
+}
+
+.slide{
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+}
+
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 36px;
+}
+
+#jardim-photo{
+    margin-top: 1%;
+    float: right;
+}
+
+#cultura-maker-titulo{
+    padding-top: 15px;
+    text-align: right;
+    color: #2A9B39;
+    font-family: "Inter", serif;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+#cultura-maker {
+    margin-right: 40px;
+}
+
+
+#cultura-maker-texto{
+    text-align: right;
+    font-size: 19px;
+    margin-left:40%;
+    padding-top: 20px;
+    padding-right: 100px;
+    width: 500px;
+    color: black;
+}
+
+#cultura-maker-citacao{
+    background-color: #ECECEC;
+    width: 590px;
+    margin-top: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 15px;
+    position:relative;
+    left: -10px;
+}
+
+#cultura-maker-citacao-texto{
+    width: 25px;
+    font-size: 19px;
+    text-align: left;
+    color: #404040;
+}
+#cultura-maker-citacao-texto-div{
+    width: 250px;
+    margin-left: 30%;
+}
+
+.project{
+    margin-top: 0.5%;
+}
+
+.project-title{
+    color: #2A9B39;
+    border-bottom: #2A9B39 2px;
+    margin-left: 5%;
+    font-family: "Inter", serif;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.project-projects{
+    background-color: #2A9B39;
+    border: 0px;
+    width: 300px;
+    height: 56px;
+    font-family: "Inter", serif;
+    font-size: 16px;
+}
+
+.project-projects:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.project-projects:active{
+    font-weight: bold;
+    color: white;
+}
+
+.project-data{
+    background-color: #2A9B39;
+}
+
+.card-titulo{
+    font-family: "Inter", serif;
+    font-size: 16px;
+    color:black;
+}
+
+.card-texto{
+    font-family: "Inter", serif;
+    color: #404040;
+    font-size: 12px;
+}
+
+.card-image{
+    width: 3%;
+}
+
+.card-button{
+    margin-left: 60%;
+    font-size: 3px;
+    margin-top: 0.8%;
+    font-family: "Inter";
+    border-radius: 15px;
+    
+}
+
+.cartao{
+    margin-left: 50px;
+}
+
+.project-menu-table{
+    height: auto;
+    border: #103f17 1px;
+}
+.project-content{
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.card-data{
+    padding-left: 230px;
+}
+
+.cartao-corpo{
+    border:#2A9B39 30px;
+}
+
+.tema h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    margin-left: 3%;
+    letter-spacing: 4px;
+    font-size: 38px;
+    color: #2A9B39;
+}
+.cardcarr{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FFF;
+}
+.card-content{
+    height: 450px;
+    width: 320px;
+    background-color: #FFF;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1px 14px;
+    border-radius: 5%;
+    border: #000 1px solid;
+}
+.card-image{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 1%;
+    height: 200px;
+    width: 260px;
+}
+.card-image .card-img{
+    height: 110%;
+    width: 110%;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 1px solid #2A9B39;
+}
+.titulo{
+    margin-top: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #000;
+}
+.descricao{
+    font-size: 15px;
+    text-align: left;
+    color: #000;
+}
+.botao{
+    margin-top: 7%;
+    margin-left: 33%;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2A9B39;
+    font-size: 12px;
+}
+
+#botao-noticia{
+    margin-top: 15%;
+    margin-left: 33%;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2A9B39;
+    font-size: 12px;
+}
+
+#prev-button, #next-button{
+    width: 5%;
+    height: 5%;
+    margin: 2%;
+    background-color: transparent;
+    border: none;
+}
+
+#next-button{
+    margin-left: 4%
+}
+
+
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/*footer*/
+footer{
+    background-color: #ECECEC;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    border-top: 5px solid #2A9B39;
+    font-family: "Inter", sans-serif;
+}
+footer h2, footer p, footer a{
+    color: #000;   
+}
+footer h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+}
+.footer-box{
+    width: 31%;
+    padding: 3%;
+    float: left;
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.company-footer{
+    width: 80%;
+}
+.company-footer h2{
+    margin-top: 20px;
+}
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+.company-footer .footer-list a{
+    font-size: 25px;   
+    padding: 0 2px;
+    
+}
+.footer-list li{
+    margin-bottom: 1px;
+}
+.footer-list a{
+    transition: 0.5s;
+}
+.footer-list a:hover{
+    color: #2A9B39;
+}
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.menu-footer{
+    width: 80%;
+    margin-left: 100px;
+}
+.footer-bottom{
+    border-top: 1px solid #000;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
