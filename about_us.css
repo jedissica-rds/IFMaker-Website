@@ -1,3 +1,7 @@
+/*geral*/
+.titles{
+    font-family: "Inter", sans-serif;
+}
 
 /*barra*/
 
@@ -66,6 +70,10 @@ nav ul li a:hover {
     box-shadow: none;
     font-size: 30px;
     font-weight: bold;
+}
+
+#sobre-maintext {
+    color: black;
 }
 
 #sobre_nos{
