@@ -52,13 +52,22 @@ nav ul li a:hover {
 
 /*titulo*/
 
-.title{
-    align-items: center;
-
-}
-#img_sobre{
+#img_header{
     width: 100%;
+    margin: 0%;
 }
+
+#sobre-titulo{
+    position: absolute;
+    top: 41.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 #sobre_nos{
     padding-bottom: 35%;
     font-family: "Inter", sans-serif ;
