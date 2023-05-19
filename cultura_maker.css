@@ -59,6 +59,7 @@ nav ul li a:hover {
 
 #cultura-maker-titulo{
     position: absolute;
+    font-family: "Inter";
     top: 41.5%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -75,7 +76,7 @@ nav ul li a:hover {
 }
 
 #cultura-maker-p1-titulo{
-    margin-left: 41.2%;
+    margin-left: 41.1%;
     font-family: "Inter", sans-serif;
     font-weight: bolder;
     color: #2A9B39;
@@ -84,5 +85,27 @@ nav ul li a:hover {
 
 #cultura-maker-background{
     margin-bottom: 0%;
-    margin-left: 4%;
+    margin-left: 6%;
+    margin-top: 10%;
+}
+
+#cultura-maker-texto{
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 9%;
+    width: 35%;
+
+}
+
+.cultura-maker-p{
+    font-family: "Arimo", sans-serif;
+    font-size: 19px;
+}
+
+#cultura-maker-cm-img{
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 4%;
+    float: right;
+    height: 240px;
 }
