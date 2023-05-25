@@ -373,6 +373,12 @@ footer li{
     width: 31%;
     padding: 3%;
     float: left;
+    
+}
+.twitter-timeline {
+    margin-left: 60px;
+    margin-bottom: 100px;
+
 }
 footer .wrapper::after{
     clear: both;
