@@ -5,9 +5,7 @@
     color: white;
 }
 
-.carrossel{
-    padding-top: 70px;
-}
+/*barra de navegação*/
 
 .nav-bar{
     display: flex;
@@ -25,6 +23,45 @@
     padding-right: 0px;
 }
 
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+/*carrossel*/
+
+.carrossel{
+    padding-top: 40px;
+}
+.slide{
+    filter: blur(2px);
+  -webkit-filter: blur(2px);
+
+}
+
+
 .title{
     vertical-align: center;
     text-shadow: 10px;
@@ -32,6 +69,8 @@
     font-weight: bold;
     text-shadow: #000 1px 0 10px;
 }
+
+/*Quem Somos Nós*/
 
 .quem-somos-nos{
     padding-top: 2.5%;
@@ -83,43 +122,12 @@
     margin-top: 2.3%;
 }
 
-.slide{
-    filter: blur(2px);
-  -webkit-filter: blur(2px);
-
-}
-
-nav ul {
-    margin-top: 2.5%;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: lighter;
-}
-
-nav ul li a:hover {
-    color: #2A9B39;
-}
-
-.botao-pesquisa{
-    border: 0px;
-    background-color: white;
-    padding-right: 18px;
-    padding-left: 36px;
-}
-
 #jardim-photo{
     margin-top: 1%;
     float: right;
 }
+
+/*Cultura Maker*/
 
 #cultura-maker-titulo{
     padding-top: 15px;
@@ -166,6 +174,8 @@ nav ul li a:hover {
     width: 250px;
     margin-left: 30%;
 }
+
+/*Projetos*/
 
 .project{
     margin-top: 0.5%;
@@ -317,6 +327,8 @@ nav ul li a:hover {
     background-color: #2A9B39;
     font-size: 12px;
 }
+
+/*Notícia*/
 
 #botao-noticia{
     margin-top: 15%;

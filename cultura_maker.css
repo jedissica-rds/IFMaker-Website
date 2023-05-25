@@ -35,7 +35,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
 nav ul li a:hover {
@@ -46,7 +46,7 @@ nav ul li a:hover {
     border: 0px;
     background-color: white;
     padding-right: 18px;
-    padding-left: 36px;
+    padding-left: 18px;
 }
 
 
@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 #img_cultura{
     width: 100%;
-    margin: 0%;
+    margin: none;
 }
 
 #cultura-maker-titulo{
@@ -108,4 +108,91 @@ nav ul li a:hover {
     margin-top: 4%;
     float: right;
     height: 240px;
+}
+
+/*Cultura Maker*/
+
+.cultura-maker-titulo{
+    color: #2A9B39;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cultura-maker-valores{
+    margin-right: 14px;
+    margin-left: 1px;
+}
+
+.second-table{
+    margin-left: 16%;
+}
+
+.cartao{
+    padding: 40px;
+}
+
+.cultura-maker-cards-uni{
+    border-radius: 100%;
+}
+
+.card{
+    border-radius: 40%;
+}
+
+.cultura-maker-valores{
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.div-img-cm{
+    margin-top: 3.5%;
+}
+.cartao-texto{
+    font-size: 9px;
+    color: #8a8a8a;
+}
+
+/*Espaço Maker*/
+
+.espaco-maker{
+    margin-top: 7%;
+}
+
+.espaco-maker-titulo{
+    color: #2A9B39;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 4%;
+}
+
+.espaco-maker-texto{
+    margin-right: 15%;
+    margin-left: 4%;
+    margin-top: 4.5%;
+}
+
+.espaco-maker-texto-p{
+    font-size: 20px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+}
+
+.espaco-maker-figures{
+    height: 300px;
+    float: right;
+    margin-right: 5%;
+}
+
+/*Galeria*/
+
+.galeria{
+    margin-top: 28%;
+}
+
+.galeria-titulo{
+    margin-left: 4%;
+    margin-top: 7%;
+    color: #2A9B39;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
