@@ -155,6 +155,35 @@ nav ul li a:hover {
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
 }
+/*Área de como participação*/
+.part{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+#title-participa{
+    color: #2A9B39;
+    font-size: 35px;
+    margin-left: 8%;
+    font-weight: bold;
+}
+#text-part{
+    color: #000;
+    font-size: 15px;
+    padding-inline-end: 35%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#botao-p{
+    background: transparent;
+    border-radius: 4px;
+    border-width: thin;
+    border-color: #2A9B39;
+    color:#2A9B39;
+    margin-top: 2%;
+    margin-left: 8%;
+    padding: 6px;
+    width: 12%;
+}
 
 
 
