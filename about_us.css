@@ -89,6 +89,7 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
     background: #0C5423;
+    overflow: hidden;
 }
 /*titulo section*/
 .text-gest{
