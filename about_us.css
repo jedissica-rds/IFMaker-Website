@@ -66,7 +66,11 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-#sobre-maintext {
+.sobre-main-text{
+    text-align: left;
+    margin-top: 4%;
+    margin-left: 20%;
+    padding-inline-end: 18%;
     color: black;
 }
 
@@ -77,12 +81,15 @@ nav ul li a:hover {
     font-size: 35px;
     color: #2A9B39;
 }
-/*section*/
+
+
+/*section gestao*/
 #gestao{
-    margin-top: 10%;
+    margin-top: 4%;
     height: 100%;
     width: 100%;
     background: #0C5423;
+    overflow: hidden;
 }
 /*titulo section*/
 .text-gest{
@@ -138,6 +145,7 @@ nav ul li a:hover {
 
 .card{
     border-radius: 40%;
+    background-color: #0C5423;
 }
 
 .objetivos{
@@ -149,8 +157,41 @@ nav ul li a:hover {
     margin-top: 3.5%;
 }
 .cartao-texto{
-    font-size: 9px;
-    color: #8a8a8a;
+    font-size: 14px;
+    color: #2A9B39;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/*Área de como participação*/
+.part{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+#title-participa{
+    color: #2A9B39;
+    font-size: 35px;
+    margin-left: 8%;
+    font-weight: bold;
+}
+#text-part{
+    color: #000;
+    font-size: 15px;
+    padding-inline-end: 35%;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+#botao-p{
+    background: transparent;
+    border-radius: 4px;
+    border-width: thin;
+    border-color: #2A9B39;
+    color:#2A9B39;
+    margin-top: 2%;
+    margin-left: 8%;
+    padding: 6px;
+    width: 12%;
 }
 
 
