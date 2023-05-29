@@ -354,6 +354,15 @@ nav ul li a:hover {
     padding: 25px;
 }
 
+.redes-border{
+    height: 507px;
+    padding: 18px;
+    border: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-radius: 3.5%;
+}
+
 .redes-sociais-table{
     margin-left: 20px;
 }
