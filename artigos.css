@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 0px;
+}
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 36px;
+}
+/*titulo*/
+
+#img_header{
+    width: 100%;
+    margin: 0%;
+}
+
+#sobre-titulo{
+    position: absolute;
+    top: 41.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 30px;
+    font-weight: bold;
+}
