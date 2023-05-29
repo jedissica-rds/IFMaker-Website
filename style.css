@@ -350,13 +350,25 @@ nav ul li a:hover {
 
 /*Redes Sociais*/
 
-<<<<<<< HEAD
-.es-header-user-full-name {
-=======
+.redes{
+    padding: 25px;
+}
+
+.redes-sociais-table{
+    margin-left: 20px;
+}
+
 .Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
     color: black;
 }
 
+.es-header-user-full-name{
+    color: black;
+}
+
+.es-header-user-username{
+    color: #000;
+}
 
 
 .joSrve, .joSrve * {
@@ -365,7 +377,6 @@ nav ul li a:hover {
     outline-color: initial !important;
     outline-style: none !important;
     outline-width: initial !important;
->>>>>>> a53dbdfc6c528dfc66a440ae98520b57582e8f75
     color: black;
 }
 
