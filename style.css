@@ -55,11 +55,6 @@ nav ul li a:hover {
 .carrossel{
     padding-top: 40px;
 }
-.slide{
-    filter: blur(2px);
-  -webkit-filter: blur(2px);
-
-}
 
 
 .title{
@@ -355,7 +350,22 @@ nav ul li a:hover {
 
 /*Redes Sociais*/
 
+<<<<<<< HEAD
 .es-header-user-full-name {
+=======
+.Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
+    color: black;
+}
+
+
+
+.joSrve, .joSrve * {
+    box-sizing: border-box !important;
+    outline: none !important;
+    outline-color: initial !important;
+    outline-style: none !important;
+    outline-width: initial !important;
+>>>>>>> a53dbdfc6c528dfc66a440ae98520b57582e8f75
     color: black;
 }
 
