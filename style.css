@@ -124,6 +124,10 @@ nav ul li a:hover {
 
 /*Cultura Maker*/
 
+.btn-cultura-maker{
+    text-decoration: none;
+}
+
 #cultura-maker-titulo{
     padding-top: 15px;
     text-align: right;
@@ -169,6 +173,7 @@ nav ul li a:hover {
     width: 250px;
     margin-left: 30%;
 }
+
 
 /*Projetos*/
 
@@ -354,6 +359,19 @@ nav ul li a:hover {
     padding: 25px;
 }
 
+#tiktok-anchor{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#tiktok-anchor:hover {
+    text-decoration: underline;
+}
+
 .redes-border{
     height: 507px;
     padding: 18px;
@@ -361,6 +379,12 @@ nav ul li a:hover {
     border-style: solid;
     border-color: #d0d0d0;
     border-radius: 3.5%;
+}
+
+.tiktok-border{
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
 }
 
 .redes-sociais-table{
