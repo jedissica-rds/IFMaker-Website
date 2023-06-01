@@ -57,6 +57,7 @@ nav ul li a:hover {
 
 #sobre-titulo{
     position: absolute;
+    font-family: "Inter";
     top: 41.5%;
     left: 50%;
     transform: translate(-50%, -50%);
