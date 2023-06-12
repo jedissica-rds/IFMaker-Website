@@ -1,0 +1,233 @@
+/*GERAL*/
+
+.titles{
+    font-family: "Inter", sans-serif;
+}
+
+
+/*Barra de Navegação*/
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 0px;
+}
+
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+/*Título e Descrição*/
+
+.projeto_descricao{
+    padding-top: 150px;
+}
+
+.titulo_projeto {
+    text-align: center;
+}
+
+.reta-horizontal{
+
+    display: block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    margin-left: 470px;
+    margin-right: 470px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+.subtitulo_projeto{
+    margin-left: 340px;
+}
+
+.subtitulo{
+    padding-top: 8px;
+    width: 580px;
+    color: #7B7B7B;
+    text-align: center;
+    font-family: "Arimo";
+    letter-spacing: 0.5px;
+    font-weight: 350;
+    font-size: 14px;
+}
+
+.projeto-content{
+    display: inline-flex;
+}
+
+.projeto-descricao{
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 100px;
+}
+
+.projeto-imagem{
+    position: absolute;
+    height: 400px;
+    margin-left: 72px;
+    margin-top: -2px;
+}
+
+.projeto-imagem-background{
+    margin-top: 40px;
+    height: 300px;
+    width: 560px;
+    background-color: #2A9B39;
+}
+
+.highlight{
+    color: #2A9B39;
+}
+
+.projeto-descricao-content{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.projeto-texto{
+    width: 530px;
+}
+
+.projeto-resultados-esperados{
+    margin-left: 85px;
+}
+.resultado-texto{
+    width: 580px;
+}
+
+.projeto-resultados-alcancados{
+    margin-top: 80px;
+}
+
+.resultados-titulo-alcancado{
+    text-align: right;
+    margin-right: 75px;
+}
+.resultado-texto-alcancado{
+    text-align: right;
+    width: 580px;
+    margin-left: 610px;
+}
+
+/*Equipe do Projeto*/
+
+.time-titulo{
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.reta-horizontal-pequena{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 50px;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+
+}
+
+.titulo-equipe{
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.reta-horizontal-grande{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 900px;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+.coordenadores_projeto{
+    margin-top: 40px;
+    margin-left: 57px;
+}
+
+.titulo-coordenador{
+    opacity: 57%;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.reta-coordenadores{
+    margin-top: 0.1px;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 215px;
+    margin-left: 0px;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color:#61AD6B;
+}
+
+.card-equipe{
+    display: inline-block;
+}
+
+.equipe-imagem{
+    display: inline-flex;
+    border-radius: 100%;
+    height: 145px;
+}
+
+.equipe-texto{
+    display:inline-block;
+}
+
+.equipe-membro-nome{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.equipe-card-div{
+    margin-top: 100px;
+}

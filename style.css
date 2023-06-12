@@ -19,6 +19,9 @@
     width: 100%;
 }
 
+.hamburger-with-buttons {
+    display: inline-block;
+}
 .btns{
     display: inline-block;
 }
@@ -44,6 +47,11 @@ nav ul li a {
     font-weight: 400;
 }
 
+#botao-entrar{
+    height: 35px;
+    font-size: 14px;
+}
+
 nav ul li a:hover {
     color: #2A9B39;
 }
@@ -51,12 +59,11 @@ nav ul li a:hover {
 .botao-pesquisa{
     border: 0px;
     background-color: white;
-    padding-right: 18px;
-    padding-left: 18px;
 }
 .hamburger {
     display: none;
     cursor: pointer;
+    padding-right: 2px;
 }
 
 .bar {
@@ -82,12 +89,16 @@ nav ul li a:hover {
     .botao-pesquisa{
         border: 0px;
         background-color: white;
-        padding-right: 10px;
         padding-left: 10px;
     }
 }
 
 @media (max-width : 970px){
+
+    .btns {
+        position:fixed;
+        right: 79px;
+    }
 
     nav ul li a:hover {
         color: white;
@@ -104,6 +115,8 @@ nav ul li a:hover {
 
     .hamburger{
         display: block;
+        position: fixed;
+        right: 30px;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -111,11 +124,11 @@ nav ul li a:hover {
     }
 
     .hamburger.active .bar:nth-child(1){
-        transform: translatey(8px) rotate(45deg);
+        transform: translatey(6.3px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3){
-        transform: translatey(-8px) rotate(-45deg);
+        transform: translatey(-6.3px) rotate(-45deg);
     }
 
     .nav_links{
@@ -132,9 +145,14 @@ nav ul li a:hover {
         transition: 0.3s;
     }
 
+    .logo{
+        padding-right: 0px;
+        height: 60px;
+    }
+
     .nav-item{
         padding: 3px;
-        margin: 16px 0;
+        margin: 0 0;
         color: white;
 
     }
@@ -145,6 +163,38 @@ nav ul li a:hover {
 
     .nav_links.active {
         left: 0;
+    }
+
+    .bar {
+        height: 1px;
+        width: 20px;
+    }
+
+    #inactive{
+        color: #404040;
+    }
+
+    #inactive:hover{
+        color: red;
+    }
+
+    .title{
+        vertical-align: center;
+        text-shadow: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: #000 1px 0 10px;
+    }
+
+    #botao-entrar{
+        height: 32px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    
+    .botao-pesquisa {
+        height: 20px;
     }
 }
 
