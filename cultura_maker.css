@@ -195,3 +195,88 @@ nav ul li a:hover {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/*footer*/
+footer{
+    background-color: #ECECEC;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    margin-top: 10%;
+    border-top: 5px solid #2A9B39;
+    font-family: "Inter", sans-serif;
+}
+footer h2, footer p, footer a{
+    color: #000;   
+}
+footer h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+}
+.footer-box{
+    width: 31%;
+    padding: 3%;
+    float: left;
+    
+}
+.twitter-timeline {
+    margin-left: 60px;
+    margin-bottom: 100px;
+
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.company-footer{
+    width: 80%;
+}
+.company-footer h2{
+    margin-top: 20px;
+}
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+.company-footer .footer-list a{
+    font-size: 25px;   
+    padding: 0 2px;
+    
+}
+.footer-list li{
+    margin-bottom: 1px;
+}
+.footer-list a{
+    transition: 0.5s;
+}
+.footer-list a:hover{
+    color: #2A9B39;
+}
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.menu-footer{
+    width: 80%;
+    margin-left: 100px;
+}
+.footer-bottom{
+    border-top: 1px solid #000;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}

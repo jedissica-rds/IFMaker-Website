@@ -21,30 +21,30 @@
     <div class="div-gen">
         <nav class="border-bottom fixed-top">
             <navbar class=" border-bottom nav-bar">
-            <img class="logo" src="images/image.png" height="80">
+            <img class="logo" src="images/image.png">
            
             <!--opções-->
 
             <ul class="nav_links">
-                <li><a href="about_us.html">SOBRE</a></li>
-                <li><a href="#">PROJETOS</a></li>
-                <li><a href="cultura_maker.html">CULTURA MAKER</a></li>
-                <li><a href="#">NOTÍCIAS</a></li>
-                <li><a href="#">ARTIGOS</a></li>
+                <li class="nav-item"><a href="about_us.html">SOBRE</a></li>
+                <li class="nav-item"><a href="#">PROJETOS</a></li>
+                <li class="nav-item"><a href="cultura_maker.html">CULTURA MAKER</a></li>
+                <li class="nav-item"><a href="notícias.html">NOTÍCIAS</a></li>
+                <li ><a href="artigos.html">ARTIGOS</a></li>
             </ul>
-            
+ 
             <!--botão pesquisa-->
             <div class="btns">
             <a href="#"> <button type="button" class="btn btn-outline-success botao-entrar">ENTRAR</button></a>
             <button class="botao-pesquisa"><img src="images/pesquisa-icon.png" height="20"></button>
-        </div>
-    </navbar>
-            <button class="botao-pesquisa"> <img src="images/pesquisa-icon.png" height="20"> </button>
-            
-            <!--botão entrar-->
-            <a href="#"> <button type="button" class="btn btn-success botao-entrar">ENTRAR</button> </a>
             </div>
 
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
             </navbar>
         </nav>
     </div>
@@ -76,7 +76,7 @@
                 <p id="jardim-sensorial-description">Somos um espaço de aprendizagem que possibilita a construção de protótipos, modelos e produtos, através de projetos que envolve a aquisição e criação de conhecimentos em diversas áreas, desenvolvendo habilidades de forma autônoma e cooperativa atendendo às demandas atuais que surgem em todos os setores da atividade humana, por meio dos conceitos de Aprendizagem Baseada em Projetos e Aprender Fazendo.</p>
             
                 <!--botao saiba mais-->
-                <button class="btn btn-outline-success" type="submit" class="botao-saiba-mais">saiba mais</button>
+                <a href="about_us.html"><button class="btn btn-outline-success" type="submit" class="botao-saiba-mais">saiba mais</button></a>
             
             </div>
         </div>
@@ -103,7 +103,7 @@
             </div>
             </div>
             <!--botão saiba mais-->
-          <button id="btn-cultura-maker"class="btn btn-outline-success botao-saiba-mais" type="submit">saiba mais</button>
+         <a href="cultura_maker.html"> <button id="btn-cultura-maker"class=" botao-saiba-mais-cultura-maker btn btn-outline-success botao-saiba-mais" type="submit"> saiba mais </button></a>
         </div>
     </section>
 
@@ -260,22 +260,29 @@
     <table class="redes-sociais-table">
         <tr>
             <td class="redes">
-            <a class="twitter-timeline" 
+                <div>
+            <a id="twitter-header" class="twitter-timeline" 
     data-width="350" 
-    data-height="550" 
+    data-height="507" 
     data-theme="light" 
     href="https://twitter.com/ifmaker_ifam?ref_src=twsrc%5Etfw">Tweets de @ifmaker_ifam</a> 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div data-mc-src="4027c60c-e32b-47a1-82a0-551cd91a564b#instagram"></div>
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            </div>
             </td>
             <td class="redes">
+                <div class="redes-border">
                 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
                 <div class="elfsight-app-f30f8ec4-f814-4622-a8ce-07326a4111aa"></div>
+                </div>
             </td>
             <td class="redes">
+                <div class="redes-border tiktok">
+                <a href="https://www.tiktok.com/@ifmaker.ifam.cmc" id="tiktok-anchor"> Tiktoks de @ifmaker.ifam.cmc</a>
                 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
                 <div class="elfsight-app-5449a194-f27f-4bba-b2c6-91fe96eb5107"></div>
+            </div>
             </td>
         </tr>
     </table>
@@ -315,16 +322,19 @@
                     <h2>Menu</h2>
                     <ul class="footer-list menu-footer-list">
                         <li>
-                            <a href="#">Sobre</a>
+                            <a href="about_us.html">Sobre</a>
                         </li>
                         <li>
                             <a href="#">Projetos</a>
                         </li>
                         <li>
-                            <a href="#">Cultura Maker</a>
+                            <a href="cultura_maker.html">Cultura Maker</a>
                         </li>
                         <li>
-                            <a href="#">Notícias</a>
+                            <a href="notícias.html">Notícias</a>
+                        </li>
+                        <li>
+                            <a href="artigos.html">Artigos</a>
                         </li>
                     </ul>
                 </div>
@@ -351,6 +361,6 @@
             </div>
         </div>
     </footer>
-    
+    <script src="homepage.js"></script>
 </body>
 </html>

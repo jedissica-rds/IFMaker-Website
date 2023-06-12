@@ -15,12 +15,17 @@
     padding-right: 8%;
     position: fixed;
     top: 0;
-    background-color: white;
+    background-color:white;
     width: 100%;
+}
+
+.btns{
+    display: inline-block;
 }
 
 .logo{
     padding-right: 0px;
+    height: 80px;
 }
 
 nav ul {
@@ -49,6 +54,100 @@ nav ul li a:hover {
     padding-right: 18px;
     padding-left: 18px;
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width : 1100px) {
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    .botao-entrar{
+        width: 80px;
+        size: 30px;
+    }
+
+    .botao-pesquisa{
+        border: 0px;
+        background-color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width : 970px){
+
+    nav ul li a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translatey(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translatey(-8px) rotate(-45deg);
+    }
+
+    .nav_links{
+        position: fixed;
+        left: -100%;
+        top : 68px;
+        gap: 0;
+        background-color: #2A9B39;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        padding: 3px;
+        margin: 16px 0;
+        color: white;
+
+    }
+
+    .nav-item:hover {
+        font-weight: bold;
+    }
+
+    .nav_links.active {
+        left: 0;
+    }
+}
+
 
 /*carrossel*/
 
@@ -124,6 +223,10 @@ nav ul li a:hover {
 
 /*Cultura Maker*/
 
+.btn-cultura-maker{
+    text-decoration: none;
+}
+
 #cultura-maker-titulo{
     padding-top: 15px;
     text-align: right;
@@ -169,6 +272,7 @@ nav ul li a:hover {
     width: 250px;
     margin-left: 30%;
 }
+
 
 /*Projetos*/
 
@@ -348,6 +452,34 @@ nav ul li a:hover {
 
 .redes{
     padding: 25px;
+}
+
+#tiktok-anchor{
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#tiktok-anchor:hover {
+    text-decoration: underline;
+}
+
+.redes-border{
+    height: 507px;
+    padding: 18px;
+    border: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-radius: 3.5%;
+}
+
+.tiktok-border{
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
 }
 
 .redes-sociais-table{
