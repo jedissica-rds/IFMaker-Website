@@ -148,37 +148,194 @@ nav ul li a:hover {
 
 /*Equipe do Projeto*/
 
-.time-titulo{
+.equipe-projeto{
+    margin-bottom: 35px;
+}
+
+.highlight-bold{
+    font-weight: bold;
+    color: #61AD6B;
+}
+
+.underline{
+    opacity: 100%;
+    border-style: solid;
+    border-color:#61AD6B;
+    border-width: 0.8px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: -20px;
+}
+
+.grid-item{
+    margin-top: 50px;
+}
+
+.item-imagem{
+    border-radius: 100%;
+    height: 145px;
+}
+
+.item-text{
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+.equipe-membro-nome{
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.equipe-ocupacao{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+        /*Título: Equipe*/
+        .equipe-titulo{
+            white-space: nowrap;
+            overflow-x: auto;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        .reta-horizontal-pequena{
+            display: inline-block;
+            margin-top: 0.4em;
+            margin-bottom: 0.5em;
+            opacity: 100%;
+            width: 50px;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 1.9px;
+            border-color:#61AD6B;
+        }
+
+        .equipe-titulo-h2{
+            display: inline-block;
+            margin-left: 0px;
+        }
+
+        .reta-horizontal-grande{
+            display: inline-block;
+            margin-top: 0.4em;
+            margin-bottom: 0.5em;
+            opacity: 100%;
+            width: 700px;
+            margin-left: 10px;
+            margin-right: 0px;
+            border-style: solid;
+            border-width: 1.9px;
+            border-color:#61AD6B;
+
+        }
+
+        /*Título: Coordenadores/Estudantes*/
+
+        .equipe-coordenadores{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+        .coordenadores-titulo-h3{
+            color: #7B7B7B;
+            font-size: 22px;
+            opacity: 70%;
+            margin-left: 2px;
+        }
+
+        .underline-coordenadores{
+            width: 17.2%;
+            margin-top: -3px;
+        }
+
+        .equipe-estudantes{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+        .estudantes-titulo-h3{
+            color: #7B7B7B;
+            font-size: 22px;
+            opacity: 70%;
+            margin-left: 4px;
+        }
+
+        .underline-estudantes{
+            width: 13%;
+            margin-top: -3px;
+        }
+
+/*Galeria do Projeto*/
+
+.galeria-titulo-h2{
+    color: black;
+}
+
+.galeria-titulo{
     white-space: nowrap;
     overflow-x: auto;
     width: 100%;
     margin-top: 70px;
 }
 
-.reta-horizontal-pequena{
+.reta-horizontal-pequena-teste{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 700px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+.galeria-titulo-h2{
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.reta-horizontal-grande-teste{
     display: inline-block;
     margin-top: 0.4em;
     margin-bottom: 0.5em;
     opacity: 100%;
     width: 50px;
-    margin-right: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-style: solid;
     border-width: 1.9px;
     border-color:#61AD6B;
 
 }
 
-.titulo-equipe{
-    display: inline-block;
-    margin-left: 0px;
+.galeria-photo{
+    height: 265px;
+    padding: 10px;
 }
 
-.reta-horizontal-grande{
+.grid-galeria{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+/*Equipamento do Projeto*/
+
+.reta-horizontal-grande-equipamento{
     display: inline-block;
     margin-top: 0.4em;
     margin-bottom: 0.5em;
     opacity: 100%;
-    width: 900px;
+    width: 585px;
     margin-left: 10px;
     margin-right: 0px;
     border-style: solid;
@@ -186,48 +343,106 @@ nav ul li a:hover {
     border-color:#61AD6B;
 }
 
-.coordenadores_projeto{
-    margin-top: 40px;
-    margin-left: 57px;
-}
-
-.titulo-coordenador{
-    opacity: 57%;
-    font-size: 22px;
-    margin-left: 5px;
-    margin-bottom: 0px;
-}
-
-.reta-coordenadores{
-    margin-top: 0.1px;
-    margin-bottom: 0.5em;
-    opacity: 100%;
-    width: 215px;
-    margin-left: 0px;
-    border-style: solid;
-    border-width: 0.8px;
-    border-color:#61AD6B;
-}
-
-.card-equipe{
+.item-text-equipamento{
     display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 5px;
 }
 
-.equipe-imagem{
-    display: inline-flex;
+.equipamento-nome{
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+}
+
+.equipamento-imagem{
     border-radius: 100%;
-    height: 145px;
+    height: 120px;
 }
 
-.equipe-texto{
-    display:inline-block;
+.equipamento-grid{
+    margin-top: 30px;
+    text-align: center;
 }
 
-.equipe-membro-nome{
-    font-size: 23px;
-    font-weight: bold;
+/*footer*/
+footer{
+    background-color: #ECECEC;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    margin-top: 10%;
+    border-top: 5px solid #2A9B39;
+    font-family: "Inter", sans-serif;
 }
+footer h2, footer p, footer a{
+    color: #000;   
+}
+footer h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+}
+.footer-box{
+    width: 31%;
+    padding: 3%;
+    float: left;
+    
+}
+.twitter-timeline {
+    margin-left: 60px;
+    margin-bottom: 100px;
 
-.equipe-card-div{
-    margin-top: 100px;
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.company-footer{
+    width: 80%;
+}
+.company-footer h2{
+    margin-top: 20px;
+}
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+.company-footer .footer-list a{
+    font-size: 25px;   
+    padding: 0 2px;
+    
+}
+.footer-list li{
+    margin-bottom: 1px;
+}
+.footer-list a{
+    transition: 0.5s;
+}
+.footer-list a:hover{
+    color: #2A9B39;
+}
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.menu-footer{
+    width: 80%;
+    margin-left: 100px;
+}
+.footer-bottom{
+    border-top: 1px solid #000;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
 }
