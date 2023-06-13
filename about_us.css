@@ -164,6 +164,36 @@ nav ul li a:hover {
     letter-spacing: 1px;
 }
 
+/*Equipamentos*/
+.part-equipamentos{
+    margin-top: 5%;
+
+}
+#t-equip{
+    font-size: 35px;
+    color: #2A9B39;
+    margin-left: 5%;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+.equipamentos{
+    border-collapse:separate;
+    border-spacing: 20px;
+    margin-top: 2%;
+    margin-left:3%;
+}
+.titulo-equip{
+    align-items: left;
+    justify-content: left;
+    color: #000;
+    font-size: 16px;
+}
+.img{
+    margin: 0%;
+    padding: 0%;
+}
+
 
 /*Área de como participação*/
 .part{
