@@ -407,7 +407,7 @@ nav ul li a:hover {
 .cartao-corpo{
     border:#2A9B39 30px;
 }
-
+/*NOTÍCIAS*/
 .tema h2{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -437,25 +437,30 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: left;
     padding: 1px 14px;
-    border-radius: 5%;
+    border-radius: 25px;
     border: #000 1px solid;
 }
 .card-image{
     position: relative;
-    margin-top: 2%;
-    margin-left: 1%;
-    height: 200px;
+    margin-top: 6%;
+    margin-left: 0%;
+    height: 180px;
     width: 260px;
 }
 .card-image .card-img{
     height: 110%;
     width: 110%;
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 20px;
     border: 1px solid #2A9B39;
 }
+.fa-calendar-days{
+    margin-top: 30px;
+    font-size: 15px;
+    margin-left: 5px;
+}
 .titulo{
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -467,29 +472,20 @@ nav ul li a:hover {
     color: #000;
 }
 .botao{
-    margin-top: 7%;
+    margin-top: 0%;
     margin-left: 33%;
     height: 30px;
     width: 100px;
-    border: none;
-    border-radius: 30px;
+    border: #2A9B39 solid 1px;
+    border-radius: 15px;
     background-color: #2A9B39;
     font-size: 12px;
 }
-
-/*Notícia*/
-
-#botao-noticia{
-    margin-top: 15%;
-    margin-left: 33%;
-    height: 30px;
-    width: 100px;
-    border: none;
-    border-radius: 30px;
-    background-color: #2A9B39;
-    font-size: 12px;
+.botao:hover{
+    background-color: #FFF;
+    color: #2A9B39;
+    transition: 0.5s;
 }
-
 #prev-button, #next-button{
     width: 5%;
     height: 5%;
@@ -645,4 +641,71 @@ footer .wrapper::after{
     font-size: 14px;
     font-weight: 600;
     margin-top: 30px;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 768px){
+     
+    header{
+        height: 10%;
+        width: 66%;
+    }
+    .nav-bar, .border-bottom{
+        height: 10%;
+        width: 67%;
+    }
+    nav-links{
+        width: 15px;
+    }
+    #fonte-jardim-sensorial{
+        margin: -1%;
+        margin-top: 2%;
+    }
+    #jardim-sensorial-titulo{
+        margin-top: 2%;
+        font-size: 25px;
+    }
+    #jardim-sensorial-description{
+        font-size: 15px;
+    }
+    #jardim-sensorial-titulo, #jardim-sensorial-description{
+        margin-left: 25%;
+    }
+    .btn.btn-outline-sucess, .botao-saiba-mais{
+        margin-right: 1%;
+    }
+    
+    /*cultura maker*/
+    #cultura-maker-titulo{
+        font-size: 25px;
+    }
+    #fonte-jardim-sensorial, #jardim-photo{
+        height: 300px;
+        width: 250px;
+    }
+    #cultura-maker-texto{
+        font-size: 15px;
+        margin-left: 0%;
+        padding: 5%;
+    }
+    #cultura-maker-citacao{
+        height: 70px;
+        width: 350px;
+        margin-top: 24%;
+    }
+    #cultura-maker-citacao-texto{
+        font-size: 15px;
+    }
+    #btn-cultura-maker{
+        height: 15%;
+    }
+    .project-title{
+        font-size: 25px;
+    }
+    .project-content{
+        height: 5%;
+        width: 50%;
+    }
+    
+     
 }
