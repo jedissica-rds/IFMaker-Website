@@ -10,6 +10,7 @@
 .nav-bar{
     display: flex;
     align-items: center;
+    height: 6rem;
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 8%;
@@ -17,6 +18,7 @@
     top: 0;
     background-color:white;
     width: 100%;
+    z-index: 0;
 }
 
 .hamburger-with-buttons {
@@ -76,143 +78,31 @@ nav ul li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width : 1100px) {
-    nav ul li a{
-        font-size: 13px;
-    }
-
-    .botao-entrar{
-        width: 80px;
-        size: 30px;
-    }
-
-    .botao-pesquisa{
-        border: 0px;
-        background-color: white;
-        padding-left: 10px;
-    }
-}
-
-@media (max-width : 970px){
-
-    .btns {
-        position:fixed;
-        right: 79px;
-    }
-
-    nav ul li a:hover {
-        color: white;
-        font-weight: bold;
-    }
-
-    nav ul li a {
-        color: white;
-    }
-
-    nav ul {
-        display: block;
-    }
-
-    .hamburger{
-        display: block;
-        position: fixed;
-        right: 30px;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translatey(6.3px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translatey(-6.3px) rotate(-45deg);
-    }
-
-    .nav_links{
-        position: fixed;
-        left: -100%;
-        top : 68px;
-        gap: 0;
-        background-color: #2A9B39;
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
-    }
-
-    .logo{
-        padding-right: 0px;
-        height: 60px;
-    }
-
-    .nav-item{
-        padding: 3px;
-        margin: 0 0;
-        color: white;
-
-    }
-
-    .nav-item:hover {
-        font-weight: bold;
-    }
-
-    .nav_links.active {
-        left: 0;
-    }
-
-    .bar {
-        height: 1px;
-        width: 20px;
-    }
-
-    #inactive{
-        color: #404040;
-    }
-
-    #inactive:hover{
-        color: red;
-    }
-
-    .title{
-        vertical-align: center;
-        text-shadow: 10px;
-        font-family: "Inter", sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        text-shadow: #000 1px 0 10px;
-    }
-
-    #botao-entrar{
-        height: 32px;
-        font-size: 10px;
-        margin-left: 0;
-    }
-    
-    .botao-pesquisa {
-        height: 20px;
-    }
-}
-
 
 /*carrossel*/
 
-.carrossel{
-    padding-top: 40px;
+.imagem-top-carrossel{
+    width: 100%;
 }
 
+.carrossel{
+    padding-top: 6rem;
+}
 
-.title{
+.centered {
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
     vertical-align: center;
     text-shadow: 10px;
     font-family: "Inter", sans-serif;
+    font-size: 25px;
     font-weight: bold;
     text-shadow: #000 1px 0 10px;
-}
+    margin-top: 35px;
+
+  }
 
 /*Quem Somos Nós*/
 
@@ -232,6 +122,10 @@ nav ul li a:hover {
     margin-left: 30%;
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
+}
+
+.ifmaker-sala{
+    display: none;
 }
 
 .botao-saiba-mais{
@@ -321,6 +215,10 @@ nav ul li a:hover {
 #cultura-maker-citacao-texto-div{
     width: 250px;
     margin-left: 30%;
+}
+
+.jardim-sensorial-mobile{
+    display: none;
 }
 
 
@@ -644,68 +542,267 @@ footer .wrapper::after{
 }
 
 /*RESPONSIVIDADE*/
-@media screen and (max-width: 768px){
-     
-    header{
-        height: 10%;
-        width: 66%;
+
+/*Navbar*/
+
+@media (max-width : 1100px) {
+    nav ul li a{
+        font-size: 13px;
     }
-    .nav-bar, .border-bottom{
-        height: 10%;
-        width: 67%;
+
+    .botao-entrar{
+        width: 80px;
+        size: 30px;
     }
-    nav-links{
-        width: 15px;
+
+    .botao-pesquisa{
+        border: 0px;
+        background-color: white;
+        padding-left: 10px;
     }
+}
+
+@media (max-width : 900px){
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav_links{
+        display: none;
+    }
+
+    .logo{
+        padding-right: 0px;
+        height: 60px;
+    }
+
+    .nav-item{
+        padding: 3px;
+        margin: 0 0;
+        color: white;
+
+    }
+
+    .nav-item:hover {
+        font-weight: bold;
+    }
+
+    .nav_links.active {
+        left: 0;
+    }
+
+    .bar {
+        height: 1px;
+        width: 20px;
+    }
+
+    #botao-entrar{
+        height: 32px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    
+    .botao-pesquisa {
+        height: 20px;
+    }
+}
+
+
+/*Carrossel*/
+
+@media (max-width:900px){
+
+    .carrossel{
+        position: relative;
+        top: 0;
+    }
+
+    .nav-bar{
+        height: 4rem;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+    
+    .imagem-top-carrossel{
+        width: 100%;
+    }
+
+    .centered{
+        font-size: 18px;
+        margin-top: 45px;
+    }
+}
+
+/*Sobre Nós*/
+
+@media (max-width:900px){
+    .quem-somos-nos{
+        padding-top: 2.5%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
     #fonte-jardim-sensorial{
-        margin: -1%;
-        margin-top: 2%;
+        display: none;
+        order: 3;
+        margin-left: 0px;
+      
     }
+    
+    #jardim-sensorial-texto{
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        width: 600px;
+        margin-left: 30px;
+        width: 100%;
+
+    }
+    
+    .botao-saiba-mais{
+        display: none;
+        margin-top: -40px;
+        margin-right: 15px;
+        font-family: "Inter";
+        border-radius: 15px;
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 70%;
+    }
+
+    .saiba-mais-text{
+        font-size: 10px;
+        display: none;
+    }
+    
+    .gray-area{
+        background-color: white;
+        height: 240px;
+    }
+    
+    
     #jardim-sensorial-titulo{
-        margin-top: 2%;
+        color: #2A9B39;
+        font-family: "Inter", serif;
+        font-weight: bolder;
         font-size: 25px;
+        width: 700px;
+        margin-top: 28px;
+    
     }
+
+    
     #jardim-sensorial-description{
+        color: black;
+        font-family: "Arimo", sans-serif;
         font-size: 15px;
+        margin-top: 2.3%;
+        width: 85%;
     }
-    #jardim-sensorial-titulo, #jardim-sensorial-description{
-        margin-left: 25%;
+
+    .ifmaker-sala{
+        display: block;
+        width: 430px;
+        margin-top: 30px;
+        margin-left: 0px;
     }
-    .btn.btn-outline-sucess, .botao-saiba-mais{
-        margin-right: 1%;
+
+}
+
+/*Cultura Maker*/
+
+@media (max-width:900px){
+    .btn-cultura-maker{
+        text-decoration: none;
     }
     
-    /*cultura maker*/
     #cultura-maker-titulo{
+        color: #2A9B39;
+        font-family: "Inter", serif;
+        font-weight: bolder;
         font-size: 25px;
+        width: 100%;
+        text-align: end;
+        margin-right: 0px;
     }
-    #fonte-jardim-sensorial, #jardim-photo{
-        height: 300px;
-        width: 250px;
-    }
-    #cultura-maker-texto{
-        font-size: 15px;
-        margin-left: 0%;
-        padding: 5%;
-    }
-    #cultura-maker-citacao{
-        height: 70px;
-        width: 350px;
-        margin-top: 24%;
-    }
-    #cultura-maker-citacao-texto{
-        font-size: 15px;
-    }
-    #btn-cultura-maker{
-        height: 15%;
-    }
-    .project-title{
-        font-size: 25px;
-    }
-    .project-content{
-        height: 5%;
-        width: 50%;
+
+    #jardim-photo{
+        display: none;
+        order: 3;
+        height: 200px;
     }
     
-     
+    #cultura-maker {
+        margin-right: 20px;
+        margin-top: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    #cultura-maker-texto{
+        text-align: end;
+        font-size: 16px;
+        margin-left: 65px;
+        margin-right: 0px;
+        padding-top: 5px;
+        padding-right: 100px;
+        width: 500px;
+        color: black;
+        display: block;
+        order: 1;
+    }
+    
+    #cultura-maker-citacao{
+        background-color: #ECECEC;
+        width: 590px;
+        margin-top: 40px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 15px;
+        position:relative;
+        left: -10px;
+        display: none;
+    }
+    
+    #cultura-maker-citacao-texto{
+        width: 25px;
+        font-size: 19px;
+        text-align: left;
+        color: #404040;
+    }
+    #cultura-maker-citacao-texto-div{
+        width: 250px;
+        margin-left: 30%;
+    }
+
+    #btn-cultura-maker{
+        margin-left: 91.2%;
+        margin-top: 2%;
+    }
+
+    .jardim-sensorial-mobile{
+        display: block;
+        width: 430px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+    }
+
+    .linha-separacao{
+        height: 140px;
+        border-width: 100px;
+        opacity: 100%;
+        color: #2A9B39;
+        background-color: #2A9B39;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
 }
