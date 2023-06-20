@@ -1,0 +1,146 @@
+/*GERAL*/
+
+.titles{
+    font-family: "Inter", sans-serif;
+}
+
+/*barra de navegação*/
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 0px;
+}
+
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+
+/* header e título*/
+
+.header{
+    text-align: center;
+}
+
+.titulo-header{
+    text-align: center;
+}
+
+#img_cultura{
+    width: 100%;
+    margin: none;
+}
+
+#cultura-maker-titulo{
+    position: absolute;
+    font-family: "Inter";
+    top: 41.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: none;
+    box-shadow: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*Grid*/
+
+.grid-projetos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 120px;
+    padding-top: 20px;
+}
+
+.card-titulo{
+    font-family: "Inter", serif;
+    font-size: 16px;
+    color:black;
+}
+
+.card-texto{
+    font-family: "Inter", serif;
+    color: #404040;
+    font-size: 12px;
+}
+
+.card-image{
+    width: 2%;
+}
+
+.card-button{
+    margin-left: 55%;
+    margin-top: 0.8%;
+    width: 95px;
+    font-family: "Inter";
+    font-size: 10px;
+    border-radius: 15px;
+    
+}
+
+.card-saiba-mais{
+    font-size: 10px;
+}
+
+.cartao{
+    margin-left: 50px;
+}
+
+.card-data{
+    padding-left: 230px;
+}
+
+.cartao-corpo{
+    border:#2A9B39 30px;
+}
+
+.anchor-text{
+    width: 60px;
+    text-decoration: none;
+    color: #2A9B39;
+    font-size: 13px;
+}
+
+.anchor-text:hover{
+    color: white;
+}
+
+.titulo-card{
+    color: white;
+}
