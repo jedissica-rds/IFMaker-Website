@@ -224,87 +224,6 @@ nav ul li a:hover {
 
 /*Projetos*/
 
-.project{
-    margin-top: 0.5%;
-}
-
-.project-title{
-    color: #2A9B39;
-    border-bottom: #2A9B39 2px;
-    margin-left: 5%;
-    font-family: "Inter", serif;
-    font-weight: bolder;
-    font-size: 38px;
-}
-
-.project-projects{
-    background-color: #2A9B39;
-    border: 0px;
-    width: 300px;
-    height: 56px;
-    font-family: "Inter", serif;
-    font-size: 16px;
-}
-
-.project-projects:hover {
-    font-weight: bold;
-    color: white;
-}
-
-.project-projects:active{
-    font-weight: bold;
-    color: white;
-}
-
-.project-data{
-    background-color: #2A9B39;
-}
-
-.card-titulo{
-    font-family: "Inter", serif;
-    font-size: 16px;
-    color:black;
-}
-
-.card-texto{
-    font-family: "Inter", serif;
-    color: #404040;
-    font-size: 12px;
-}
-
-.card-image{
-    width: 3%;
-}
-
-.card-button{
-    margin-left: 60%;
-    font-size: 3px;
-    margin-top: 0.8%;
-    font-family: "Inter";
-    border-radius: 15px;
-    
-}
-
-.cartao{
-    margin-left: 50px;
-}
-
-.project-menu-table{
-    height: auto;
-    border: #103f17 1px;
-}
-.project-content{
-    margin-top: 55px;
-    margin-bottom: 30px;
-}
-
-.card-data{
-    padding-left: 230px;
-}
-
-.cartao-corpo{
-    border:#2A9B39 30px;
-}
 /*NOTÍCIAS*/
 .tema h2{
     font-family: 'Inter', sans-serif;
@@ -397,6 +316,10 @@ nav ul li a:hover {
 }
 
 /*Redes Sociais*/
+
+.redes-sociais-mobile{
+    display: none;
+}
 
 .redes{
     padding: 25px;
@@ -802,7 +725,223 @@ footer .wrapper::after{
         color: #2A9B39;
         background-color: #2A9B39;
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     
+}
+
+@media (max-width: 900px){
+
+    .tema h2{
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        margin-left: 3%;
+        letter-spacing: 1px;
+        font-size: 25px;
+        color: #2A9B39;
+    }
+    .cardcarr{
+        margin: 0%;
+        margin-top: 7%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF;
+    }
+    .card-content{
+        height: 450px;
+        width: 90%;
+        background-color: #FFF;
+        margin-bottom: 10%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 1px 14px;
+        border-radius: 0%;
+        border: #dfdfdf 1px solid;
+        box-shadow: 0px 4px 8px 0px rgb(216, 216, 216);
+    }
+
+    #card-segundo{
+        width: 90%;
+        height: 420px;
+    }
+    .card-image{
+        position: relative;
+        margin-top: 3%;
+        margin-left: 0%;
+        height: 180px;
+        width: 100%;
+    }
+    .card-image .card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0px;
+        border: 1px solid #ffffff;
+    }
+    .fa-calendar-days{
+        margin-top: 20px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .titulo{
+        margin-top: 2%;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        color: #000;
+    }
+    .descricao{
+        font-size: 15px;
+        text-align: left;
+        color: #000;
+    }
+    .botao{
+        margin-top: 9%;
+        margin-left: 75%;
+        margin-bottom: 0%;
+        height: 30px;
+        width: 100px;
+        border: #2A9B39 solid 1px;
+        border-radius: 15px;
+        background-color: #2A9B39;
+        font-size: 12px;
+    }
+
+    .bota-segundo-card{
+        margin-top: 10%;
+    }
+    .botao:hover{
+        background-color: #FFF;
+        color: #2A9B39;
+        transition: 0.5s;
+    }
+    #prev-button, #next-button{
+        width: 5%;
+        height: 5%;
+        margin: 2%;
+        background-color: transparent;
+        border: none;
+        display: none;
+    }
+    
+    #next-button{
+        margin-left: 4%
+    }
+
+}
+
+/*Redes Sociais: Responsividade:*/
+
+@media (max-width:900px){
+
+    .tema-redes{
+        margin-left: 0%;
+    }
+
+    .tema-redes h2{
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        margin-left: 0%;
+        letter-spacing: 1px;
+        font-size: 25px;
+        color: #2A9B39;
+    }
+
+    .redes-sociais{
+        display: none;
+    }
+
+    .redes-sociais-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes{
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .twitter{
+        margin-left: -60px;
+    }
+
+    #tiktok-anchor{
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    #tiktok-anchor:hover {
+        text-decoration: underline;
+    }
+    
+    .redes-border{
+        height: 60%;
+        padding: 18px;
+        border: 1px;
+        border-style: solid;
+        border-color: #d0d0d0;
+        border-radius: 3.5%;
+    }
+
+    .tiktok{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+
+    .instagram{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+
+    }
+    
+    .tiktok-border{
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: #d0d0d0;
+    }
+    
+    .redes-sociais-table{
+        margin-left: 0%;
+    }
+    
+    .Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
+        color: black;
+    }
+    
+    .es-header-user-full-name{
+        color: black;
+    }
+    
+    .es-header-user-username{
+        color: #000;
+    }
+    
+    
+    .joSrve, .joSrve * {
+        box-sizing: border-box !important;
+        outline: none !important;
+        outline-color: initial !important;
+        outline-style: none !important;
+        outline-width: initial !important;
+        color: black;
+    }
+
 }
