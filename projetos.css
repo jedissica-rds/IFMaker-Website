@@ -22,6 +22,10 @@
     padding-right: 0px;
 }
 
+.hamburger{
+    display: none;
+}
+
 nav ul {
     margin-top: 2.5%;
 }
@@ -43,12 +47,9 @@ nav ul li a:hover {
 }
 
 .botao-pesquisa{
-    border: 0px;
     background-color: white;
-    padding-right: 18px;
-    padding-left: 18px;
+    border: 0px;
 }
-
 
 /* header e título*/
 
@@ -88,6 +89,10 @@ nav ul li a:hover {
     padding-top: 20px;
 }
 
+.card{
+    width: 15rem;
+}
+
 .card-titulo{
     font-family: "Inter", serif;
     font-size: 16px;
@@ -120,6 +125,7 @@ nav ul li a:hover {
 
 .cartao{
     margin-left: 50px;
+    width: 15rem;
 }
 
 .card-data{
@@ -143,4 +149,222 @@ nav ul li a:hover {
 
 .titulo-card{
     color: white;
+}
+
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+/*footer*/
+footer{
+    background-color: #ECECEC;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    margin-top: 10%;
+    width: 100%;
+    border-top: 5px solid #2A9B39;
+    font-family: "Inter", sans-serif;
+}
+footer h2, footer p, footer a{
+    color: #000;   
+}
+footer h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+}
+.footer-box{
+    width: 31%;
+    padding: 3%;
+    float: left;
+    
+}
+.twitter-timeline {
+    margin-left: 60px;
+    margin-bottom: 100px;
+
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.company-footer{
+    width: 80%;
+}
+.company-footer h2{
+    margin-top: 20px;
+}
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+.company-footer .footer-list a{
+    font-size: 25px;   
+    padding: 0 2px;
+    
+}
+.footer-list li{
+    margin-bottom: 1px;
+}
+.footer-list a{
+    transition: 0.5s;
+}
+.footer-list a:hover{
+    color: #2A9B39;
+}
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.menu-footer{
+    width: 80%;
+    margin-left: 100px;
+}
+.footer-bottom{
+    border-top: 1px solid #000;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+
+/*Responsividade: Celular*/
+
+/*Barra de Navegação: Responsividade*/
+
+@media (max-width:900px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger .bar{
+        color: black;
+        width: 20px;
+        height: 10px;
+        display: block;
+    }
+
+    .nav_links{
+        display: none;
+    }
+}
+    
+/*Header e Título: Responsividade*/
+
+@media (max-width:900px){
+
+    #img_cultura{
+        height: 30%;
+    }
+
+    #cultura-maker-titulo{
+
+        position: absolute;
+        font-family: "Inter";
+        top: 27.5%;
+        left: 50%;
+        text-shadow: none;
+        box-shadow: none;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+}
+
+/*Projetos: Responsividade*/
+
+@media (max-width:900px){
+
+    .grid-projetos{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 11rem 11rem ;
+        justify-content:center;
+        align-content: center;
+        row-gap: 30px;
+        column-gap: 20px;
+        padding-top: 40px;
+        margin-bottom: 90px;
+    }
+
+    .grid-projetos button{
+        display: none;
+    }
+
+    .card{
+        width: 11rem;
+        height: 14rem;
+    }
+    
+    .card-titulo{
+        font-family: "Inter", serif;
+        font-size: 14px;
+        color:black;
+    }
+    
+    .card-texto{
+        font-family: "Inter", serif;
+        color: #404040;
+        font-size: 9px;
+    }
+    
+    .card-image{
+        width: 2%;
+    }
+    
+    .card-button{
+        margin-left: 55%;
+        margin-top: 0.8%;
+        width: 80px;
+        font-family: "Inter";
+        font-size: 3px;
+        border-radius: 15px;
+        display: none;
+        
+    }
+    
+    .card-saiba-mais{
+        font-size: 3px;
+    }
+    
+    .cartao{
+        margin-left: 50px;
+    }
+    
+    .card-data{
+        padding-left: 23px;
+    }
+    
+    .cartao-corpo{
+        border:#2A9B39 30px;
+    }
+    
+    .anchor-text{
+        width: 60px;
+        text-decoration: none;
+        color: #2A9B39;
+        font-size: 3px;
+        display: none;
+    }
+    
+    .anchor-text:hover{
+        color: white;
+    }
+    
+    .titulo-card{
+        color: white;
+    }
+    
+
 }
