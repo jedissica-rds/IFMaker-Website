@@ -22,6 +22,10 @@
     padding-right: 0px;
 }
 
+.hamburger{
+    display: none;
+}
+
 nav ul {
     margin-top: 2.5%;
 }
@@ -43,12 +47,9 @@ nav ul li a:hover {
 }
 
 .botao-pesquisa{
-    border: 0px;
     background-color: white;
-    padding-right: 18px;
-    padding-left: 18px;
+    border: 0px;
 }
-
 
 /* header e título*/
 
@@ -116,10 +117,7 @@ nav ul li a:hover {
     color: #2A9B39;
     font-size: 26px;
     font-weight: bold;
-}
-
-.cultura-maker-valores{
-    margin-left: 20px;
+    
 }
 
 .second-table{
@@ -127,11 +125,12 @@ nav ul li a:hover {
 }
 
 .cartao{
-    padding: 40px;
+    padding: 20px;
 }
 
 .cultura-maker-cards-uni{
     border-radius: 100%;
+    width: 14rem;
 }
 
 .card{
@@ -150,6 +149,32 @@ nav ul li a:hover {
     font-size: 9px;
     color: #8a8a8a;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+    padding-top: 20px;
+    margin-right: 40px;
+    padding-right: 10%;
+}
+
+.grid-container-second{
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+    padding-top: 20px;
+}
+
+.container-left{
+    margin-left: 11%;
+}
+
+
 
 /*Espaço Maker*/
 
@@ -280,3 +305,197 @@ footer .wrapper::after{
     font-weight: 600;
     margin-top: 30px;
 }
+
+/*Responsividade: Celular*/
+
+/*Barra de Navegação: Responsividade*/
+
+@media (max-width:900px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger .bar{
+        color: black;
+        width: 20px;
+        height: 10px;
+        display: block;
+    }
+
+    .nav_links{
+        display: none;
+    }
+}
+
+/*Header e Título: Responsividade*/
+
+@media (max-width:900px){
+
+    #img_cultura{
+        height: 30%;
+    }
+
+    #cultura-maker-titulo{
+
+        position: absolute;
+        font-family: "Inter";
+        top: 27.5%;
+        left: 50%;
+        text-shadow: none;
+        box-shadow: none;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+}
+
+/*A Cultura Maker: Responsividade*/
+
+@media (max-width:900px){
+    #cultura-maker-texto-principal-div{
+        margin-top: 4%;
+    }
+    
+    #cultura-maker-p1-titulo{
+        margin-left:32%;
+        font-family: "Inter", sans-serif;
+        font-weight: bolder;
+        color: #2A9B39;
+        letter-spacing: 2px;
+        margin-top: 10%;
+    }
+    
+    #cultura-maker-background{
+        margin-bottom: 0%;
+        margin-left: 6%;
+        margin-top: 16%;
+        width: 100%;
+    }
+    
+    #cultura-maker-texto{
+        position: absolute;
+        margin-top: 4%;
+        margin-left: 9%;
+        width: 90%;
+    
+    }
+    
+    .cultura-maker-p{
+        font-family: "Arimo", sans-serif;
+        font-size: 16px;
+    }
+    
+    #cultura-maker-cm-img{
+        position: absolute;
+        margin-top: 50%;
+        margin-left: 9%;
+        height: 240px;
+    }
+    
+}
+
+
+/*Valores: Responsividade*/
+
+
+@media (max-width:900px){
+
+    .cultura-maker-titulo{
+        color: #2A9B39;
+        font-size: 22px;
+        font-weight: bold;
+        text-shadow: 0.5px 1px 4px #ececec;
+        margin-left: -45px;
+        
+    }
+    
+    .cartao{
+        padding: 10px;
+    }
+
+    .cartao-second{
+        padding: 10px;
+    }
+    
+    .cultura-maker-cards-uni{
+        border-radius: 100%;
+        box-shadow: 2px 2px 2px  #c7c7c7;
+    }
+    
+    .card{
+        border-radius: 40%;
+        width: 25rem;
+    }
+    
+    .cultura-maker-valores{
+        margin-top: 310px;
+        margin-left: 9%;
+    }
+    
+    .div-img-cm{
+        margin-top: 3.5%;
+    }
+    .cartao-texto{
+        font-size: 9px;
+        color: #8a8a8a;
+    }
+    
+    .grid-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: -18px;
+    }
+    
+    .grid-container-second{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-top: -10px;
+    }
+    
+}
+
+
+/*Escoaço Maker: Responsividade*/
+
+
+@media (max-width:900px){
+
+    .espaco-maker{
+        margin-top: 15%;
+        margin-bottom: 70%;
+    }
+    
+    .espaco-maker-titulo{
+        color: #2A9B39;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-left: 4%;
+        font-size: 22px;
+    }
+    
+    .espaco-maker-texto{
+        margin-right: 15%;
+        margin-left: 4%;
+        margin-top: 4.5%;
+    }
+    
+    .espaco-maker-texto-p{
+        font-size: 16px;
+        font-family: "Arimo", sans-serif;
+        font-weight: 400;
+    }
+    
+    .espaco-maker-figures{
+        margin-top: 5%;
+        position: absolute;
+        left: 22.5%;
+        height: 200px;
+        
+    }
+
+
+}
+
