@@ -89,36 +89,90 @@ nav ul li a:hover {
     margin-top: 4%;
     height: 100%;
     width: 98.7vw;
-    background: #0C5423;
+    background: #156643;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colaboradores{
+
+    margin-top: 2%;
+    height: 100%;
+    width: 98.7vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 /*titulo section*/
+
+#title-gestao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .text-gest{
     font-size: 30px;
     color: #ECECEC;
-    margin-left: 41%;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(44, 43, 43);
+    margin-bottom: -0.5%;
+    display: block;
 }
 .text-title{
-    margin-right: 25%;
     color: #ECECEC;
     font-size: 15px;
-    margin-left: 24%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     text-align: center;
+    width: 60%;
+    margin-left: 19.5%;
+    text-shadow: 1px 1px 5px rgb(44, 43, 43);
 }
-/*cards*/
-.card{
-    width: 80%;
-    height: 95%;
-    margin-left: 10%;
-    padding: 1%;
+
+/*Grid*/
+
+.colaboradores-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 0.2px;
 }
-/*textos do cards*/
-.card-title{
-    color: #000;
-}
+
+/*Cards*/
+
 .card-text{
-    color: #000;
+    color: white;
+    font-size: 10px;
+}
+
+.card-title{
+    color: white;
+}
+
+.card .card-img-overlay{
+    margin-top: 35%;
+    text-shadow: 1px 1px 3px rgb(44, 43, 43);
+    border-radius: 30px;
+}
+
+#gestao .colaboradores .card .card-img-top{
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgb(37, 37, 37);
+}
+
+div .card{
+    background-color: #156643;
+}
+
+.card{
+    height: 10rem;
+    margin-bottom: 30%;
+    border: 0px #156643;
 }
 
 /*Área dos objetivos*/
@@ -144,10 +198,6 @@ nav ul li a:hover {
     border-radius: 100%;
 }
 
-.card{
-    border-radius: 40%;
-    background-color: #0C5423;
-}
 
 .objetivos{
     margin-top: 7%;
