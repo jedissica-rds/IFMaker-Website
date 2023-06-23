@@ -104,6 +104,21 @@ nav ul li a:hover {
 
   }
 
+.carousel-item{
+overflow: hidden;
+}
+
+.carousel-inner{
+display: flex;
+transition: transform 0.5ms ease-in-out;
+transform: translateX(0);
+}
+
+.d-bock{
+    object-fit: cover;
+}
+
+
 /*Quem Somos Nós*/
 
 .quem-somos-nos{
