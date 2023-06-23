@@ -48,6 +48,7 @@ nav ul li a {
 }
 
 #botao-entrar{
+    margin-right: 6px;
     height: 35px;
     font-size: 14px;
 }
@@ -77,6 +78,13 @@ nav ul li a:hover {
 }
 
 @media (max-width : 1100px) {
+    .div-gen{
+       height: 20px;
+    }
+    .border-bottom.nav-bar{
+        height: 60px;
+        width: 1150px;
+    }
     nav ul li a{
         font-size: 13px;
     }
@@ -93,7 +101,7 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width : 970px){
+@media (max-width : 1100px){
 
     .btns {
         position:fixed;
@@ -133,15 +141,16 @@ nav ul li a:hover {
 
     .nav_links{
         position: fixed;
-        left: -100%;
-        top : 68px;
+        right: -100%;
+        top : 34px;
         gap: 0;
         background-color: #2A9B39;
         font-family: "Montserrat", sans-serif;
         text-align: center;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 40%;
+        height: 550px;
         transition: 0.3s;
     }
 
@@ -151,7 +160,7 @@ nav ul li a:hover {
     }
 
     .nav-item{
-        padding: 3px;
+        padding: 15px;
         margin: 0 0;
         color: white;
 
@@ -162,7 +171,7 @@ nav ul li a:hover {
     }
 
     .nav_links.active {
-        left: 0;
+        right: 0;
     }
 
     .bar {
@@ -705,7 +714,27 @@ footer .wrapper::after{
     .project-content{
         height: 5%;
         width: 50%;
+    }  
+
+    footer{
+        width: 576px;
+        overflow: hidden;
     }
-    
+
+    .footer-box{
+        margin-right: 50px;
+        margin-left: 10px;
+        width: 550px;
+    }
+    .menu-footer{
+        margin-left: 4px;
+    }
+    .footer-bottom{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 500px;
+        margin-left: 5px;
+    }
      
-}
+}    
