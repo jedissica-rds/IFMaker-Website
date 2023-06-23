@@ -224,6 +224,94 @@ nav ul li a:hover {
 
 /*Projetos*/
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.projetos{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .card .image-box {
+    height: 150px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .profile-details .name-job .name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  h3.name{
+    color: #000;
+  }
+  .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  .swiper-navBtn {
+    color: #000;
+    height: 20px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  .swiper-pagination-bullet{
+    margin-top: 40px;
+    background-color: #2A9B39;
+  }
+
+  #cultura-maker-p1-titulo{
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    color: #2A9B39;
+    letter-spacing: 2px;
+}
+
+.projetos-texto{
+    color: #000;
+    opacity: 70%;
+    width: 40%;
+    text-align: center;
+    padding: 15px;
+}
+
+
 /*NOTÍCIAS*/
 .tema h2{
     font-family: 'Inter', sans-serif;
@@ -945,3 +1033,41 @@ footer .wrapper::after{
     }
 
 }
+
+/*Projetos: Responsividade*/
+
+@media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  
+    .container {
+      width: 100%;
+      height: 20%;
+      padding: 40px 0;
+    }
+  
+    .card .image-box img {
+      width: 100%;
+      height: 90%;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      height: 180px;
+    }
+  
+    .card .profile-details {
+      display: flex;
+      align-items: center;
+      column-gap: 0px;
+      padding-left: 8px;
+      margin-top: -20px;
+    }
+    .profile-details .name {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
