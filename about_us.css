@@ -58,10 +58,10 @@ nav ul li a:hover {
 #sobre-titulo{
     position: absolute;
     font-family: "Inter";
-    top: 41.5%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: none;
+    text-shadow: 1px 1px 5px #474747;
     box-shadow: none;
     font-size: 30px;
     font-weight: bold;
@@ -73,6 +73,8 @@ nav ul li a:hover {
     margin-left: 20%;
     padding-inline-end: 18%;
     color: black;
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
 }
 
 #sobre_nos{
@@ -176,78 +178,202 @@ div .card{
 }
 
 /*Área dos objetivos*/
-.objects{
-    margin-top: 4%;
-}
-#title-obj{
-    color: #2A9B39;
-    font-size: 35px;
+
+
+.objetivos-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 5%;
+    margin-bottom: 50px;
     margin-left: 5%;
-    
 }
 
-.second-table{
-    margin-left: 16%;
-}
-
-.cartao{
-    padding: 40px;
-}
-
-.objetivos-cards-uni{
-    border-radius: 100%;
-}
-
-
-.objetivos{
-    margin-top: 7%;
-    margin-left: 2.5%;
-}
-
-.div-img-cm{
-    margin-top: 3.5%;
-}
-.cartao-texto{
+.objetivos-subtitulo{
+    color: black;
+    font-family: "Cabin", sans-serif;
     font-size: 14px;
-    color: #2A9B39;
-    font-family: "Inter", sans-serif;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
-/*Equipamentos*/
-.part-equipamentos{
-    margin-top: 5%;
-
-}
-#t-equip{
-    font-size: 35px;
+.objetivos-h2{
     color: #2A9B39;
+    font-size: 36px;
+    text-align:start;
+}
+
+.objetivos-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 1px;
     margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.grid-objetivos{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 1px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.objetivos .objetivos-grid .card-objetivos{
+    background-color: white ;
     text-align: center;
-    font-weight: bolder;
-    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px #b1b1b1;
 }
-.equipamentos{
-    border-collapse:separate;
-    border-spacing: 20px;
+
+.objetivos .card-last{
+    background-color: white ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px #b1b1b1;
+    width: 55%;
+    margin-bottom: 5%;
+    height: 10rem;
+    margin-left: 22%;
+}
+
+.objetivos .objetivos-grid .card{
+    margin-bottom: 6%;
+}
+
+.objetivos .objetivos-grid .card-objetivos .card-objetivos-titulo{
+    color: #156643;
+    font-size: 20px;
+    font-weight: 650;
     margin-top: 2%;
-    margin-left:3%;
+    font-family: "Cabin", sans-serif;
 }
-.titulo-equip{
-    align-items: left;
-    justify-content: left;
-    color: #000;
+
+.objetivos .card-objetivos-titulo{
+    color: #156643;
+    font-size: 20px;
+    font-weight: 650;
+    margin-top: 2%;
+    font-family: "Cabin", sans-serif;
+}
+
+.objetivos .objetivos-grid .card-objetivos .card-objetivos-texto{
+    color: black;
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+    width: 100%;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.objetivos .card-objetivos-texto{
+    color: black;
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+    width: 100%;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/*Equipamentos*/
+
+.equipamentos-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.equipamentos-subtitulo{
+    color: black;
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin-top: -2%;
+}
+
+.equipamentos-h2{
+    color: #2A9B39;
+    font-size: 36px;
+    text-align: center;
+}
+
+.equipamento-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 25px;
+    row-gap: 1px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+}
+
+.equipamento-grid .equipamento-card{
+    background-color: white ;
+    box-shadow: 1px 1px 5px #b1b1b1;
+    width: 360px;
+    margin-bottom: 10%;
+}
+
+.equipamento-card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    top: 25%;
+    margin-left: 50%;
+}
+
+.equipamentos-img{
+    border-radius: 100%;
+    height: 120px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.equipamento-card-titulo{
+    color: #1f1f1f;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+}
+
+.equipamento-card-descricao{
+    color: #474747;
     font-size: 16px;
+    font-weight: 500;
+    font-family: "Cabin", sans-serif;
 }
-.img{
-    margin: 0%;
-    padding: 0%;
+
+
+.equipamentos-img-div{
+    margin-left: 0%;
 }
 
 
 /*Área de como participação*/
 .part{
-    margin-top: 8%;
+    margin-top: 3%;
     margin-bottom: 8%;
 }
 #title-participa{
