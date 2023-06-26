@@ -50,6 +50,7 @@ nav ul li a {
 }
 
 #botao-entrar{
+    margin-right: 6px;
     height: 35px;
     font-size: 14px;
 }
@@ -76,6 +77,137 @@ nav ul li a:hover {
     margin: 5px auto;
     background-color: black;
     transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width : 1100px) {
+    .div-gen{
+       height: 20px;
+    }
+    .border-bottom.nav-bar{
+        height: 60px;
+        width: 1150px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    .botao-entrar{
+        width: 80px;
+        size: 30px;
+    }
+
+    .botao-pesquisa{
+        border: 0px;
+        background-color: white;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width : 1100px){
+
+    .btns {
+        position:fixed;
+        right: 79px;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translatey(6.3px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translatey(-6.3px) rotate(-45deg);
+    }
+
+    .nav_links{
+        position: fixed;
+        right: -100%;
+        top : 34px;
+        gap: 0;
+        background-color: #2A9B39;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 550px;
+        transition: 0.3s;
+    }
+
+    .logo{
+        padding-right: 0px;
+        height: 60px;
+    }
+
+    .nav-item{
+        padding: 15px;
+        margin: 0 0;
+        color: white;
+
+    }
+
+    .nav-item:hover {
+        font-weight: bold;
+    }
+
+    .nav_links.active {
+        right: 0;
+    }
+
+    .bar {
+        height: 1px;
+        width: 20px;
+    }
+
+    #inactive{
+        color: #404040;
+    }
+
+    #inactive:hover{
+        color: red;
+    }
+
+    .title{
+        vertical-align: center;
+        text-shadow: 10px;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-shadow: #000 1px 0 10px;
+    }
+
+    #botao-entrar{
+        height: 32px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    
+    .botao-pesquisa {
+        height: 20px;
+    }
 }
 
 
@@ -761,6 +893,57 @@ footer .wrapper::after{
         margin-right: 0px;
     }
 
+    #fonte-jardim-sensorial, #jardim-photo{
+        height: 300px;
+        width: 250px;
+    }
+    #cultura-maker-texto{
+        font-size: 15px;
+        margin-left: 0%;
+        padding: 5%;
+    }
+    #cultura-maker-citacao{
+        height: 70px;
+        width: 350px;
+        margin-top: 24%;
+    }
+    #cultura-maker-citacao-texto{
+        font-size: 15px;
+    }
+    #btn-cultura-maker{
+        height: 15%;
+    }
+    .project-title{
+        font-size: 25px;
+    }
+    .project-content{
+        height: 5%;
+        width: 50%;
+    }  
+
+    footer{
+        width: 576px;
+        overflow: hidden;
+    }
+
+    .footer-box{
+        margin-right: 50px;
+        margin-left: 10px;
+        width: 550px;
+    }
+    .menu-footer{
+        margin-left: 4px;
+    }
+    .footer-bottom{
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 500px;
+        margin-left: 5px;
+    }
+     
+
+
     #jardim-photo{
         display: none;
         order: 3;
@@ -1090,3 +1273,4 @@ footer .wrapper::after{
       font-weight: 500;
     }
   }
+
