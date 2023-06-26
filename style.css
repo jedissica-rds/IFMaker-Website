@@ -78,8 +78,6 @@ nav ul li a:hover {
     background-color: black;
     transition: all 0.3s ease-in-out;
 }
-
-<<<<<<< HEAD
 @media (max-width : 1100px) {
     .div-gen{
        height: 20px;
