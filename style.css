@@ -78,6 +78,8 @@ nav ul li a:hover {
     background-color: black;
     transition: all 0.3s ease-in-out;
 }
+
+
 @media (max-width : 1100px) {
     .div-gen{
        height: 20px;
@@ -208,8 +210,6 @@ nav ul li a:hover {
     }
 }
 
-=======
->>>>>>> 7132a08c26107c57c2c724d4ccd402bcb602210c
 
 /*carrossel*/
 
@@ -892,7 +892,7 @@ footer .wrapper::after{
         text-align: end;
         margin-right: 0px;
     }
-<<<<<<< HEAD
+
     #fonte-jardim-sensorial, #jardim-photo{
         height: 300px;
         width: 250px;
@@ -942,8 +942,7 @@ footer .wrapper::after{
         margin-left: 5px;
     }
      
-}    
-=======
+
 
     #jardim-photo{
         display: none;
@@ -1274,4 +1273,4 @@ footer .wrapper::after{
       font-weight: 500;
     }
   }
->>>>>>> 7132a08c26107c57c2c724d4ccd402bcb602210c
+
