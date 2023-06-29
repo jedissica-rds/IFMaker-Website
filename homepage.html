@@ -18,43 +18,36 @@
 
 
 <!--BARRA FIXA-->
-    <header>
-    <div class="div-gen">
-        <nav class="border-bottom fixed-top">
-            <navbar class=" border-bottom nav-bar">
+<script src="navbar.js"></script>
+<header>
+  <div class="navbar"> 
+      <a href="bar.html" class="logo">
+          <img class="photo" src="images/image.png" height="70px">
+      </a>
+      <ul class="links">
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">PROJETOS</a></li>
+          <li><a href="#">CULTURA MAKER</a></li> 
+          <li><a href="#">NOTÍCIAS</a></li>
+          <li><a href="#">ARTIGOS</a></li>
+      </ul>
+      <div class="btns">
+          <button class="btn_entrar">ENTRAR</button>
+          <button class="btn_pesquisa"><img src="images/pesquisa-icon.png" height="25px"></button>
+      </div>
+      <div class="toggle_btn"><i class="fa-solid fa-bars" style="color: #24ad46;"></i></div>
+  </div>
 
-            <img class="logo" src="images/image.png">
-           
-            <!--opções-->
-
-            <div>
-            <ul class="nav_links">
-                <li class="nav-item"><a href="about_us.html">SOBRE</a></li>
-                <li class="nav-item"><a href="projetos.html">PROJETOS</a></li>
-                <li class="nav-item"><a href="cultura_maker.html">CULTURA MAKER</a></li>
-                <li><a class="nav-item" href="notícias.html"  id="inactive">NOTÍCIAS</a></li>
-                <li><a class="nav-item" href="artigos.html" id="artigos.inactive">ARTIGOS</a></li>
-            </ul> 
-            </div>
- 
-            <!--botão pesquisa-->
-            <div class="btns">
-            <a href="#"> <button type="button" class="btn btn-outline-success" id="botao-entrar">ENTRAR</button></a>
-            <button class="botao-pesquisa"><img src="images/pesquisa-icon.png" height="20"></button>
-            </div>
-
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            
-            </navbar>
-        </nav>
-    </div>
-    </header>
+  <div class="dropdown_menu">
+          <li class="drop_menu"><a href="#">SOBRE</a></li>
+          <li class="drop_menu"><a href="#">PROJETOS</a></li>
+          <li class="drop_menu"><a href="#">CULTURA MAKER</a></li> 
+          <li class="drop_menu"><a href="#">NOTÍCIAS</a></li>
+          <li class="drop_menu"><a href="#">ARTIGOS</a></li>
+  </div>
+</header>
     
-    
+
     <!--CARROSSEL PRINCIPAL
                 <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0">
                 <h3 class="title">Criando e aprendendo</h3>
