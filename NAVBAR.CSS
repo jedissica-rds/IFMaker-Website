@@ -1,0 +1,161 @@
+/*LINK FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: beige;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+a:hover{
+    color: #24AD46;
+}
+/*HEADER*/
+header{
+    padding: 0 2rem;
+    border-bottom: 1px solid #24AD46;
+    background-color: #fff;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    font-family: "Inter", sans-serif;
+    margin-left: 12%;
+}
+.navbar .links{
+    display: flex;
+    gap: 3rem;
+    font-weight: 400;
+}
+
+.navbar .toggle_btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btns{
+    display: flex;
+    padding: 5%;
+}
+
+.btn_entrar{
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    color: #24AD46;
+    padding: 0.5rem 1rem;
+    border: 2px solid #24AD46;
+    border-radius: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn_entrar:hover{
+    background-color: #24AD46;
+    color: #fff;
+    scale: 1.05;
+}
+
+.btn_pesquisa{
+    background-color: transparent;
+    border: none;
+    width: 25px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.photo{
+    margin-left: 5%;
+}
+
+/*DROPPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #24AD46;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu .drop_menu{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.dropdown_menu a{
+    color: #fff;
+}
+
+.dropdown_menu a:hover{
+    font-weight: bold;
+    scale: 1.05;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+    
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display:block;
+        right: 0%;
+        width: 100%;
+        border-top: 1px solid #24AD46;
+        border-left: 1px solid #24AD46;
+        border-right: 1px solid #24AD46;
+        border-bottom: 1px solid #24AD46;
+    }
+
+/*RESPONSIVIDADE MENU*/
+
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 0;
+        right: 0;
+        width: unset;
+    }
+}  
+
+    
+}
