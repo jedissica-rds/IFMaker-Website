@@ -6,6 +6,10 @@
 
 /*barra de navegação*/
 
+.inactive{
+    color: #c2c2c2;
+}
+
 .nav-bar{
     display: flex;
     align-items: center;
@@ -22,10 +26,6 @@
     padding-right: 0px;
 }
 
-.hamburger{
-    display: none;
-}
-
 nav ul {
     margin-top: 2.5%;
 }
@@ -40,6 +40,11 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+nav ul li .inactive {
+    color: #d6d4d4;
 }
 
 nav ul li a:hover {
@@ -49,7 +54,60 @@ nav ul li a:hover {
 .botao-pesquisa{
     background-color: white;
     border: 0px;
+    margin-left: 13px;
 }
+
+.btns .botao-entrar:hover{
+    background-color: #c2c2c2;
+    border-color: #404040;
+}
+
+/*DROPPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: fixed;
+    right: 2rem;
+    height: 0;
+    top: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toggle_btn{
+    display: none;
+}
+
+.dropdown_menu.open{
+    height: 270px;
+}
+
+.dropdown_menu .drop_menu{
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 1%;
+    border-bottom: 0.2px solid #eeecec;
+}
+
+.dropdown_menu a{
+    color: #000000;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.dropdown_menu a:hover{
+    font-weight: bold;
+    scale: 1.05;
+    color: #2A9B39;
+}
+
+
 
 /* header e título*/
 
@@ -243,19 +301,46 @@ footer .wrapper::after{
 /*Barra de Navegação: Responsividade*/
 
 @media (max-width:900px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger .bar{
-        color: black;
-        width: 20px;
-        height: 10px;
-        display: block;
-    }
-
-    .nav_links{
+    .nav-bar .links{
         display: none;
+    }
+    
+    .nav-bar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display:block;
+        right: 0%;
+        width: 60%;
+        border-top: 1px solid #ECECEC;
+        border-left: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        z-index: 3;
+    }
+
+    .dropdown_menu{
+        left: 0;
+        right: 0;
+        width: unset;
+    }
+
+    .botao-pesquisa{
+        background-color: white;
+        border: 0px;
+        padding-left: 5px;
+    }
+
+    .btns .botao-entrar{
+        height: 30px;
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    .btns{
+        margin-right: -120px;
     }
 }
     

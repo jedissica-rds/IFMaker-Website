@@ -6,6 +6,10 @@
 
 /*barra de navegação*/
 
+.inactive{
+    color: #c2c2c2;
+}
+
 .nav-bar{
     display: flex;
     align-items: center;
@@ -22,10 +26,6 @@
     padding-right: 0px;
 }
 
-.hamburger{
-    display: none;
-}
-
 nav ul {
     margin-top: 2.5%;
 }
@@ -40,6 +40,11 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+nav ul li .inactive {
+    color: #d6d4d4;
 }
 
 nav ul li a:hover {
@@ -49,8 +54,58 @@ nav ul li a:hover {
 .botao-pesquisa{
     background-color: white;
     border: 0px;
+    margin-left: 13px;
 }
 
+.btns .botao-entrar:hover{
+    background-color: #c2c2c2;
+    border-color: #404040;
+}
+
+/*DROPPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: fixed;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toggle_btn{
+    display: none;
+}
+
+.dropdown_menu.open{
+    height: 270px;
+}
+
+.dropdown_menu .drop_menu{
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 1%;
+    border-bottom: 0.2px solid #eeecec;
+}
+
+.dropdown_menu a{
+    color: #000000;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.dropdown_menu a:hover{
+    font-weight: bold;
+    scale: 1.05;
+    color: #2A9B39;
+}
 /* header e título*/
 
 #img_cultura{
@@ -223,87 +278,118 @@ nav ul li a:hover {
 
 /*import*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
-
 /*footer*/
-footer{
+
+.footer_rodape{
     background-color: #ECECEC;
-    padding-top: 2em;
-    padding-bottom: 40px;
-    margin-top: 10%;
-    border-top: 5px solid #2A9B39;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    margin-bottom: 0%;
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 90px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 10;
+}
+
+.rodape_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo_footer{
+    height: 70px;
+}
+
+.footer_horizontal{
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.rodape_logo_texto{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    width: 60%;
+    margin-top: -4%;
+    color: #000;
+}
+
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.redes_icon{
+    height: 80px;
+}
+
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+    margin-right: 60px;
+}
+
+.footer_menu_h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.footer_menu_links{
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+
+.footer_contato{
     font-family: "Inter", sans-serif;
 }
-footer h2, footer p, footer a{
-    color: #000;   
+.footer_contato-texto{
+    color: #000;
+    font-size: 13px;
 }
-footer h2{
-    font-weight: 500;
-    font-size: 25px;
-}
-footer a{
-    text-decoration: none;
-}
-footer ul{
-    padding: 0;
-}
-footer li{
-    list-style: none;
-}
-.footer-box{
-    width: 31%;
-    padding: 3%;
-    float: left;
-    
-}
-.twitter-timeline {
-    margin-left: 60px;
-    margin-bottom: 100px;
 
+.footer_horizontal .footer_contato-titulo{
+    color: #000;
+    font-size: 20px;
+    font-weight: 490;
 }
-footer .wrapper::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-.company-footer{
-    width: 80%;
-}
-.company-footer h2{
-    margin-top: 20px;
-}
-.company-footer h2, .company-footer p{
-    margin-bottom: 20px;
-}
-.company-footer .footer-list a{
-    font-size: 25px;   
-    padding: 0 2px;
-    
-}
-.footer-list li{
-    margin-bottom: 1px;
-}
-.footer-list a{
-    transition: 0.5s;
-}
-.footer-list a:hover{
-    color: #2A9B39;
-}
-.footer-list li::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-.menu-footer{
-    width: 80%;
-    margin-left: 100px;
-}
+
 .footer-bottom{
-    border-top: 1px solid #000;
+    margin-top: 8%;
+    padding-left: 10%;
+    width: 100%;
 }
-.footer-bottom p{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 30px;
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper p {
+    color: #000;
+    font-size: 16px;
+    width: 80%;
+    font-family: "Inter", sans-serif;
 }
 
 /*Responsividade: Celular*/
@@ -311,19 +397,77 @@ footer .wrapper::after{
 /*Barra de Navegação: Responsividade*/
 
 @media (max-width:900px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger .bar{
-        color: black;
-        width: 20px;
-        height: 10px;
-        display: block;
-    }
-
-    .nav_links{
+    .nav-bar .links{
         display: none;
+    }
+    
+    .nav-bar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display:block;
+        right: 0%;
+        width: 60%;
+        border-top: 1px solid #ECECEC;
+        border-left: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        z-index: 3;
+    }
+
+    .dropdown_menu{
+        left: 0;
+        right: 0;
+        width: unset;
+    }
+
+    .botao-pesquisa{
+        background-color: white;
+        border: 0px;
+        padding-left: 10px;
+    }
+
+    .btns .botao-entrar{
+        height: 30px;
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    .btns{
+        margin-right: -160px;
+    }
+
+}
+
+
+
+/*Carrossel*/
+
+@media (max-width:900px){
+
+    .carrossel{
+        position: relative;
+        top: 0;
+    }
+
+    .nav-bar{
+        height: 4rem;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+    
+    .imagem-top-carrossel{
+        width: 100%;
+    }
+
+    .centered{
+        font-size: 22px;
+        margin-top: 0%;
+        width: 100%;
     }
 }
 

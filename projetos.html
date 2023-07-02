@@ -18,30 +18,36 @@
             <nav class="border-bottom fixed-top">
                 <navbar class=" border-bottom nav-bar">
                 <img class="logo" src="images/image.png" height="80">
-
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
-                <ul class="nav_links">
+      
+                <ul class="links">
                     <li><a href="about_us.html">SOBRE</a></li>
-                    <li><a href="#">PROJETOS</a></li>
+                    <li><a href="projetos.html">PROJETOS</a></li>
                     <li><a href="cultura_maker.html">CULTURA MAKER</a></li>
-                    <li><a href="notícias.html">NOTÍCIAS</a></li>
-                    <li><a href="artigos.html">ARTIGOS</a></li>
+                    <li><a href="notícias.html" class="inactive">NOTÍCIAS</a></li>
+                    <li><a href="artigos.html" class="inactive">ARTIGOS</a></li>
                 </ul>
-
+      
                 <div class="btns">
-                <a href="#"> <button type="button" class="btn btn-outline-success botao-entrar">ENTRAR</button></a>
+                <a href="#" id="button_anchor"> <button type="button" class="btn btn-outline-success botao-entrar">ENTRAR</button></a>
                 <button class="botao-pesquisa"><img src="images/pesquisa-icon.png" height="20"></button>
                 </div>
-
+      
+                <div class="toggle_btn"><i class="fa-solid fa-bars" style="color: #24ad46;"></i></div>
+        </div>
+      
+        <div class="dropdown_menu">
+                <li class="drop_menu"><a href="about_us.html">SOBRE</a></li>
+                <li class="drop_menu"><a href="projetos.html">PROJETOS</a></li>
+                <li class="drop_menu"><a href="cultura_maker.html">CULTURA MAKER</a></li> 
+                <li class="drop_menu"><a href="#" class="inactive">NOTÍCIAS</a></li>
+                <li class="drop_menu"><a href="#" class="inactive">ARTIGOS</a></li>
+        </div>
+      
+      
                 </navbar>
             </nav>
         </div>
-    </header>
+      </header>
 
 
     <!--Título-->
@@ -208,6 +214,6 @@
         </div>
     </div>
 
-
+    <script src="navbar.js"></script>
 </body>
 </html>
