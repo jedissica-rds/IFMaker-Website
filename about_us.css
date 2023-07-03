@@ -223,8 +223,10 @@ nav ul li a:hover {
 }
 
 #gestao .colaboradores .card .card-img-top{
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 2px 2px 2px rgb(37, 37, 37);
+    height: 300px;
+    
 }
 
 div .card{
