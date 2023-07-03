@@ -294,6 +294,11 @@ transform: translateX(0);
   .slide-container {
     margin: 0 30px;
     overflow: hidden;
+    text-decoration: none;
+  }
+
+  .profile-details a:-webkit-any-link{
+    text-decoration: none;
   }
   .card {
     background: #fff;
@@ -321,15 +326,18 @@ transform: translateX(0);
   .profile-details .name-job .name {
     font-size: 15px;
     font-weight: 500;
+    text-decoration: none;
   }
 
   h3.name{
     color: #000;
+    text-decoration: none;
   }
   .profile-details .job {
     font-size: 12px;
     font-weight: 500;
     color: #4d4d4d;
+    text-decoration: none;
   }
   .swiper-navBtn {
     color: #000;
@@ -360,6 +368,7 @@ transform: translateX(0);
     width: 40%;
     text-align: center;
     padding: 15px;
+
 }
 
 

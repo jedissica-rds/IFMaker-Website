@@ -217,7 +217,7 @@ nav ul li a:hover {
 }
 
 .card .card-img-overlay{
-    margin-top: 35%;
+    margin-top: 55%;
     text-shadow: 1px 1px 3px rgb(44, 43, 43);
     border-radius: 30px;
 }
@@ -473,22 +473,6 @@ div .card{
     transition: 0.5s;
     color: #FFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*import*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
