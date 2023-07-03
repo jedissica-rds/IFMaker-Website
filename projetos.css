@@ -164,6 +164,10 @@ nav ul li a:hover {
     font-size: 12px;
 }
 
+.card-body a {
+    text-decoration: none;
+}
+
 .card-image{
     width: 2%;
 }
@@ -176,6 +180,19 @@ nav ul li a:hover {
     font-size: 13px;
     border-radius: 15px;
     
+}
+
+#btn-mat{
+    margin-top: 16.58%;
+}
+
+.card-component .card:hover{
+    border-color: #0f611a;
+    border-width: 2px;
+}
+
+#btn-portal{
+    margin-top: 25%;
 }
 
 .card-saiba-mais{
