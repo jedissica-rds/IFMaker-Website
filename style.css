@@ -461,9 +461,27 @@ transform: translateX(0);
     display: none;
 }
 
+.tema-redes{
+    margin-left: 0%;
+}
+
+.tema-redes h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-left: 0%;
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #2A9B39;
+}
+
 .redes{
     padding: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
 }
+
 
 #tiktok-anchor{
     font-family: Helvetica, sans-serif;
@@ -479,22 +497,33 @@ transform: translateX(0);
 }
 
 .redes-border{
-    height: 507px;
-    padding: 18px;
+    height: 60%;
+    padding: 10px;
     border: 1px;
     border-style: solid;
     border-color: #d0d0d0;
     border-radius: 3.5%;
 }
 
+.tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+
+}
+
 .tiktok-border{
     border-bottom: 1px;
     border-style: solid;
     border-color: #d0d0d0;
-}
-
-.redes-sociais-table{
-    margin-left: 20px;
 }
 
 .Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
@@ -509,10 +538,6 @@ transform: translateX(0);
     color: #000;
 }
 
-.Text__Container-sc-6taaia-0, .fhnBls *{
-    color: #000;
-}
-
 
 .joSrve, .joSrve * {
     box-sizing: border-box !important;
@@ -522,6 +547,9 @@ transform: translateX(0);
     outline-width: initial !important;
     color: black;
 }
+
+
+
 
 /*import*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
