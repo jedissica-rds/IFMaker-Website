@@ -462,7 +462,7 @@ transform: translateX(0);
 }
 
 .tema-redes{
-    margin-left: 0%;
+    text-align: center;
 }
 
 .tema-redes h2{
@@ -470,8 +470,10 @@ transform: translateX(0);
     font-weight: 600;
     margin-left: 0%;
     letter-spacing: 1px;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 600;
     color: #2A9B39;
+    margin-top: 5%;
 }
 
 .redes{
@@ -480,6 +482,7 @@ transform: translateX(0);
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
+    margin-left: 0%;
 }
 
 
@@ -497,7 +500,7 @@ transform: translateX(0);
 }
 
 .redes-border{
-    height: 60%;
+    height: 100%;
     padding: 10px;
     border: 1px;
     border-style: solid;
@@ -509,7 +512,7 @@ transform: translateX(0);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 350px;
 }
 
 .instagram{
@@ -526,6 +529,12 @@ transform: translateX(0);
     border-color: #d0d0d0;
 }
 
+.grbUXA, .grbUXA * {
+    box-sizing: border-box !important;
+    outline: none !important;
+    color: black;
+}
+
 .Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
     color: black;
 }
@@ -535,6 +544,10 @@ transform: translateX(0);
 }
 
 .es-header-user-username{
+    color: #000;
+}
+
+.Text__Container-sc-6taaia-0, .fhnBls *{
     color: #000;
 }
 

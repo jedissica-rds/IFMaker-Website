@@ -1,0 +1,1053 @@
+/*GERAL*/
+
+.titles{
+    font-family: "Inter", sans-serif;
+}
+
+
+/*Barra de Navegação*/
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 8%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.logo{
+    padding-right: 0px;
+}
+
+.hamburger{
+    display: none;
+}
+
+nav ul {
+    margin-top: 2.5%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: #2A9B39;
+}
+
+.botao-pesquisa{
+    border: 0px;
+    background-color: white;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+/*Título e Descrição*/
+
+.projeto_descricao{
+    padding-top: 150px;
+}
+
+.titulo_projeto {
+    text-align: center;
+}
+
+.reta-horizontal{
+
+    display: block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    margin-left: 470px;
+    margin-right: 470px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+.reta-horizontal-mobile{
+        display: none;
+}
+
+.subtitulo_projeto{
+    margin-left: 360px;
+}
+
+.subtitulo{
+    padding-top: 8px;
+    width: 580px;
+    color: #7B7B7B;
+    text-align: center;
+    font-family: "Arimo";
+    letter-spacing: 0.5px;
+    font-weight: 350;
+    font-size: 14px;
+}
+
+.projeto-content{
+    display: inline-flex;
+}
+
+.projeto-descricao{
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 100px;
+}
+
+.projeto-imagem{
+    position: absolute;
+    height: 400px;
+    margin-left: 72px;
+    margin-top: -2px;
+}
+
+.projeto-imagem-mobile{
+    display: none;
+}
+
+.projeto-imagem-background{
+    margin-top: 40px;
+    height: 300px;
+    width: 560px;
+    background-color: #2A9B39;
+}
+
+.highlight{
+    color: #2A9B39;
+}
+
+.projeto-descricao-content{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.projeto-texto{
+    width: 530px;
+}
+
+.projeto-resultados-esperados{
+    margin-left: 85px;
+}
+.resultado-texto{
+    width: 580px;
+}
+
+.projeto-resultados-alcancados{
+    margin-top: 80px;
+}
+
+.resultados-titulo-alcancado{
+    text-align: right;
+    margin-right: 75px;
+}
+.resultado-texto-alcancado{
+    text-align: right;
+    width: 580px;
+    margin-left: 610px;
+}
+
+/*Equipe do Projeto*/
+
+.equipe-projeto{
+    margin-bottom: 35px;
+}
+
+.highlight-bold{
+    font-weight: bold;
+    color: #61AD6B;
+}
+
+.underline{
+    opacity: 100%;
+    border-style: solid;
+    border-color:#61AD6B;
+    border-width: 0.8px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: -20px;
+}
+
+.grid-item{
+    margin-top: 50px;
+}
+
+.item-imagem{
+    border-radius: 100%;
+    height: 145px;
+}
+
+.item-text{
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+.equipe-membro-nome{
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.equipe-ocupacao{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.reta-horizontal-pequena-euipamento{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 50px;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+        /*Título: Equipe*/
+        .equipe-titulo{
+            white-space: nowrap;
+            overflow-x: auto;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        .reta-horizontal-pequena{
+            display: inline-block;
+            margin-top: 0.4em;
+            margin-bottom: 0.5em;
+            opacity: 100%;
+            width: 50px;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 1.9px;
+            border-color:#61AD6B;
+        }
+
+        .equipe-titulo-h2{
+            display: inline-block;
+            margin-left: 0px;
+        }
+
+        .reta-horizontal-grande{
+            display: inline-block;
+            margin-top: 0.4em;
+            margin-bottom: 0.5em;
+            opacity: 100%;
+            width: 700px;
+            margin-left: 10px;
+            margin-right: 0px;
+            border-style: solid;
+            border-width: 1.9px;
+            border-color:#61AD6B;
+
+        }
+
+        /*Título: Coordenadores/Estudantes*/
+
+        .equipe-coordenadores{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+        .coordenadores-titulo-h3{
+            color: #7B7B7B;
+            font-size: 22px;
+            opacity: 70%;
+            margin-left: 2px;
+        }
+
+        .underline-coordenadores{
+            width: 17.2%;
+            margin-top: -3px;
+        }
+
+        .equipe-estudantes{
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+        .estudantes-titulo-h3{
+            color: #7B7B7B;
+            font-size: 22px;
+            opacity: 70%;
+            margin-left: 4px;
+        }
+
+        .underline-estudantes{
+            width: 13%;
+            margin-top: -3px;
+        }
+
+/*Galeria do Projeto*/
+
+.galeria-titulo-h2{
+    color: black;
+}
+
+.galeria-titulo{
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.reta-horizontal-pequena-teste{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 700px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+}
+
+.galeria-titulo-h2{
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.reta-horizontal-grande-teste{
+    display: inline-block;
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+    opacity: 100%;
+    width: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-style: solid;
+    border-width: 1.9px;
+    border-color:#61AD6B;
+
+}
+
+.galeria-photo{
+    height: 265px;
+    padding: 10px;
+}
+
+.grid-galeria{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+/*Equipamento do Projeto*/
+.equipamentos-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13%;
+
+}
+
+.equipamentos-subtitulo{
+    color: black;
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin-top: -2%;
+}
+
+.equipamentos-h2{
+    color: #2A9B39;
+    font-size: 36px;
+    text-align: center;
+}
+
+.equipamento-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 25px;
+    row-gap: 1px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+}
+
+.equipamento-grid .equipamento-card{
+    background-color: white ;
+    box-shadow: 1px 1px 5px #b1b1b1;
+    width: 360px;
+    margin-bottom: 10%;
+}
+
+.equipamento-card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    top: 25%;
+    margin-left: 50%;
+}
+
+.equipamentos-img{
+    border-radius: 100%;
+    height: 120px;
+    float: left;
+    margin-top: 3%;
+    margin-left: 4%;
+}
+
+.equipamento-card-titulo{
+    color: #1f1f1f;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+}
+
+.equipamento-card-descricao{
+    color: #474747;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Cabin", sans-serif;
+}
+
+
+.equipamentos-img-div{
+    margin-left: 0%;
+}
+
+
+/*footer*/
+footer{
+    background-color: #ECECEC;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    margin-top: 10%;
+    border-top: 5px solid #2A9B39;
+    font-family: "Inter", sans-serif;
+}
+footer h2, footer p, footer a{
+    color: #000;   
+}
+footer h2{
+    font-weight: 500;
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    padding: 0;
+}
+footer li{
+    list-style: none;
+}
+.footer-box{
+    width: 31%;
+    padding: 3%;
+    float: left;
+    
+}
+.twitter-timeline {
+    margin-left: 60px;
+    margin-bottom: 100px;
+
+}
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.company-footer{
+    width: 80%;
+}
+.company-footer h2{
+    margin-top: 20px;
+}
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+.company-footer .footer-list a{
+    font-size: 25px;   
+    padding: 0 2px;
+    
+}
+.footer-list li{
+    margin-bottom: 1px;
+}
+.footer-list a{
+    transition: 0.5s;
+}
+.footer-list a:hover{
+    color: #2A9B39;
+}
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.menu-footer{
+    width: 80%;
+    margin-left: 100px;
+}
+.footer-bottom{
+    border-top: 1px solid #000;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/*Responsividade*/
+
+/*Barra de Navegação*/
+
+@media (max-width:900px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger .bar{
+        color: black;
+        width: 20px;
+        height: 10px;
+        display: block;
+    }
+
+    .nav_links{
+        display: none;
+    }
+}
+
+/*Título e Descrição*/
+
+@media (max-width:900px){
+
+    .projeto_descricao{
+        padding-top: 150px;
+    }
+    
+    .titulo_projeto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo-descricao{
+        text-align: center;
+        width:max-content;
+        position: absolute;
+        left: 30%;
+        right: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .titulo-descricao-div{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .reta-horizontal{
+        display: none;
+        opacity: 100%;
+        border-style: solid;
+        border-color:#61AD6B;
+        width: 100%;
+        text-align: left;
+    }
+
+    .reta-horizontal-mobile{
+        display: block;
+        border: 1px solid #2A9B39;
+        opacity: 100%;
+        align-items: center;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .subtitulo_projeto{
+        margin-left: 40px;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .subtitulo{
+        position: absolute;
+        right: 82%;
+        left: 18%;
+        padding-top: 68px;
+        width: 400px;
+        color: #7B7B7B;
+        text-align: center;
+        font-family: "Arimo";
+        letter-spacing: 0.5px;
+        font-weight: 350;
+        font-size: 12px;
+    }
+    
+    .projeto-content{
+        display: inline-flex;
+    }
+    
+    .projeto-descricao{
+        padding-top: 25px;
+        padding-bottom: 35px;
+        margin-bottom: 100px;
+        margin-left: 0%;
+    }
+    
+    .projeto-imagem{
+        display: none;
+    }
+    
+    .projeto-imagem-background{
+        display: none;
+        margin-top: 40px;
+        height: 300px;
+        width: 560px;
+        background-color: #2A9B39;
+    }
+    
+    .highlight{
+        color: #2A9B39;
+    }
+    
+    .projeto-descricao-content{
+        margin-top: 160px;
+        margin-left: 30px;
+    }
+    
+    .titulo-projeto{
+        font-size: 20px;
+    }
+    .projeto-texto{
+        width: 450px;
+        font-size: 15px;
+    }
+
+    .projeto-imagem-mobile{
+        display: block;
+        width: 450px;
+        position: absolute;
+        left: 5%;
+        margin-bottom: 200px;
+    }
+
+    .projeto-descricao-mobile{
+        width: 100%;
+    }
+    
+    .projeto-resultados-esperados{
+        margin-left: 35px;
+        padding-top: 300px;
+    }
+    .resultado-texto{
+        width: 88%;
+        font-size: 15px;
+    }
+
+    .resultados-titulo{
+        font-size: 22px;
+        margin-top: 65px;
+    }
+    
+    .projeto-resultados-alcancados{
+        padding-top: 20px;
+    }
+    
+    .resultados-titulo-alcancado{
+        text-align: right;
+        margin-right: 2%;
+        font-size: 22px;
+    }
+    .resultado-texto-alcancado{
+        text-align: right;
+        width: 88%;
+        position: absolute;
+        right: 2%;
+    }
+}
+
+/*Equipe*/
+
+@media (max-width: 900px){
+    .equipe-projeto{
+        margin-top: 240px;
+        margin-bottom: 35px;
+    }
+    
+    .highlight-bold{
+        font-weight: bold;
+        color: #61AD6B;
+    }
+    
+    .underline{
+        opacity: 100%;
+        border-style: solid;
+        border-color:#61AD6B;
+        border-width: 0.8px;
+    
+    }
+
+    .reta-horizontal-grande{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: -20px;
+    }
+    
+    .grid-item{
+        margin-top: 50px;
+    }
+    
+    .item-imagem{
+        border-radius: 100%;
+        height: 140px;
+        padding: 15px;
+    }
+    
+    .item-text{
+        display: inline-block;
+        position: relative;
+        left: 20%;
+        top: 20px;
+    }
+    
+    .equipe-membro-nome{
+        font-family: "Arimo", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .equipe-ocupacao{
+        font-weight: 400;
+        font-size: 11px;
+    }
+    
+            /*Título: Equipe*/
+            .equipe-titulo{
+                white-space: nowrap;
+                overflow-x: auto;
+                width: 100%;
+                margin-top: 70px;
+                font-size: 15px;
+            }
+    
+            .reta-horizontal-pequena{
+                display: inline-block;
+                margin-top: 0.4em;
+                margin-bottom: 0.5em;
+                opacity: 100%;
+                width: 50px;
+                margin-right: 8px;
+                border-style: solid;
+                border-width: 1.9px;
+                border-color:#61AD6B;
+            }
+    
+            .equipe-titulo-h2{
+                display: inline-block;
+                margin-left: 0px;
+                font-size: 22px;
+            }
+    
+            .reta-horizontal-grande{
+                display: inline-block;
+                margin-top: 0.4em;
+                margin-bottom: 0.5em;
+                opacity: 100%;
+                width: 20%;
+                text-align: end;
+                margin-left: 10px;
+                margin-right: 0px;
+                border-style: solid;
+                border-width: 1.9px;
+                border-color:#61AD6B;
+    
+            }
+    
+            /*Título: Coordenadores/Estudantes*/
+    
+            .equipe-coordenadores{
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+    
+            .coordenadores-titulo-h3{
+                color: #7B7B7B;
+                font-size: 18px;
+                opacity: 70%;
+                margin-left: 2px;
+            }
+    
+            .underline-coordenadores{
+                width: 40%;
+                margin-top: -3px;
+            }
+    
+            .equipe-estudantes{
+                margin-top: 60px;
+                margin-left: 60px;
+            }
+    
+            .estudantes-titulo-h3{
+                color: #7B7B7B;
+                font-size: 18px;
+                opacity: 70%;
+                margin-left: 4px;
+            }
+    
+            .underline-estudantes{
+                width: 30%;
+                margin-top: -3px;
+            }
+}
+
+@media (max-width:900px){
+
+    .galeria-titulo-h2{
+        color: black;
+    }
+    
+    .galeria-titulo{
+        white-space: nowrap;
+        overflow-x: auto;
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .reta-horizontal-pequena-teste{
+        display: inline-block;
+        margin-top: 0.4em;
+        margin-bottom: 0.5em;
+        opacity: 100%;
+        width: 20%;
+        border-style: solid;
+        border-width: 1.9px;
+        border-color:#61AD6B;
+    }
+    
+    .galeria-titulo-h2{
+        display: inline-block;
+        margin-left: 0px;
+        font-size: 22px;
+    }
+    
+    .reta-horizontal-grande-teste{
+        display: inline-block;
+        margin-top: 0.4em;
+        margin-bottom: 0.5em;
+        opacity: 100%;
+        width: 5%;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-style: solid;
+        border-width: 1.9px;
+        border-color:#61AD6B;
+    
+    }
+
+    .reta-horizontal-pequena-euipamento{
+        display: none;
+    }
+    
+    .galeria-photo{
+        height: 160px;
+        padding: 10px;
+    }
+    
+    .grid-galeria{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .equipe-titulo-h2{
+        font-size: 19px;
+    }
+
+    .reta-horizontal-grande-equipamento{
+        display: inline-block;
+        margin-top: 0.4em;
+        margin-bottom: 0.5em;
+        opacity: 100%;
+        width: 12%;
+        margin-left: 10px;
+        margin-right: 0px;
+        border-style: solid;
+        border-width: 1.9px;
+        border-color:#61AD6B;
+    }
+
+    .reta-horizontal-pequena-equipamento{
+        display: none;
+    }
+    .reta-horizontal-pequena-mobile{
+            display: inline-block;
+            margin-top: 0.4em;
+            margin-bottom: 0.5em;
+            opacity: 100%;
+            width: 8%;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 1.9px;
+            border-color:#61AD6B;
+
+    }
+    
+    .item-text-equipamento{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+        top: 5px;
+    }
+    
+    .equipamento-nome{
+        font-family: "Arimo", sans-serif;
+        font-size: 13px;
+    }
+    
+    .equipamento-imagem{
+        border-radius: 100%;
+        height: 120px;
+    }
+    
+    .equipamento-grid{
+        margin-top: 30px;
+        text-align: center;
+    }}
+
+
+    /*Rodapé*/
+
+    @media (max-width:900px){
+
+
+        footer{
+            background-color: #ECECEC;
+            padding-top: 2em;
+            padding-bottom: 40px;
+            margin-top: 10%;
+            border-top: 5px solid #2A9B39;
+            font-family: "Inter", sans-serif;
+            display: block;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo{
+            height: 40px;
+        }
+
+        .footer-p{
+            font-size: 15px;
+            width: 100%;
+        }
+
+        footer h2, footer p, footer a{
+            color: #000;   
+        }
+        footer h2{
+            font-weight: 500;
+            font-size: 25px;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        footer ul{
+            padding: 0;
+        }
+        footer li{
+            list-style: none;
+        }
+        .footer-box{
+    
+            width: 100%;
+            padding: 3%;
+            float: left;
+            
+        }
+        .twitter-timeline {
+            margin-left: 60px;
+            margin-bottom: 100px;
+        
+        }
+        footer .wrapper::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+        .company-footer{
+            width: 100%;
+        }
+        .company-footer h2{
+            margin-top: 20px;
+        }
+        .company-footer h2, .company-footer p{
+            margin-bottom: 20px;
+        }
+        .company-footer .footer-list a{
+            font-size: 25px;   
+            padding: 0 2px;
+            
+        }
+        .footer-list li{
+            margin-bottom: 1px;
+        }
+        .footer-list a{
+            transition: 0.5s;
+        }
+        .footer-list a:hover{
+            color: #2A9B39;
+        }
+        .footer-list li::after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+        .menu-footer{
+            width: 80%;
+            margin-left: 100px;
+        }
+        .footer-bottom{
+            border-top: 1px solid #000;
+        }
+        .footer-bottom p{
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
+    }
