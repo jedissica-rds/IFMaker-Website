@@ -434,88 +434,136 @@ nav ul li a:hover {
 }
 
 
-/*footer*/
-footer{
-    background-color: #ECECEC;
-    padding-top: 2em;
-    padding-bottom: 40px;
-    margin-top: 10%;
-    border-top: 5px solid #2A9B39;
-    font-family: "Inter", sans-serif;
-}
-footer h2, footer p, footer a{
-    color: #000;   
-}
-footer h2{
-    font-weight: 500;
-    font-size: 25px;
-}
-footer a{
-    text-decoration: none;
-}
-footer ul{
-    padding: 0;
-}
-footer li{
-    list-style: none;
-}
-.footer-box{
-    width: 31%;
-    padding: 3%;
-    float: left;
-    
-}
-.twitter-timeline {
-    margin-left: 60px;
-    margin-bottom: 100px;
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
+/*footer*/
+
+.footer_rodape{
+    background-color: #ECECEC;
+    width: 100%;
+    display: absolute;
+    flex-direction: column;
+    align-items: start;
+    bottom: 0;
+   margin-top: 10%;
+    overflow: hidden;
 }
-footer .wrapper::after{
-    clear: both;
-    content: "";
-    display: block;
+
+.rodape{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    column-gap: 90px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 10;
 }
-.company-footer{
-    width: 80%;
+
+.rodape_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
-.company-footer h2{
-    margin-top: 20px;
+
+.logo_footer{
+    height: 70px;
 }
-.company-footer h2, .company-footer p{
-    margin-bottom: 20px;
+
+.footer_horizontal{
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
 }
-.company-footer .footer-list a{
-    font-size: 25px;   
-    padding: 0 2px;
-    
+
+.rodape_logo_texto{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    width: 60%;
+    margin-top: -4%;
+    color: #000;
 }
-.footer-list li{
-    margin-bottom: 1px;
+
+.footer_redes{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
-.footer-list a{
-    transition: 0.5s;
+
+.redes_icon{
+    height: 80px;
 }
-.footer-list a:hover{
+
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+    margin-right: 60px;
+}
+
+.footer_menu_h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.footer_menu_links{
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+    color: #000;
+    cursor: pointer;
+}
+
+.footer_menu_links:hover{
     color: #2A9B39;
 }
-.footer-list li::after{
-    clear: both;
-    content: "";
-    display: block;
-}
-.menu-footer{
-    width: 80%;
-    margin-left: 100px;
-}
-.footer-bottom{
-    border-top: 1px solid #000;
-}
-.footer-bottom p{
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: 30px;
+.footer_menu_links_inativos:hover{
+    color: #2A9B39;
 }
 
+.footer_contato{
+    font-family: "Inter", sans-serif;
+}
+.footer_contato-texto{
+    color: #000;
+    font-size: 13px;
+}
+
+.footer_horizontal .footer_contato-titulo{
+    color: #000;
+    font-size: 20px;
+    font-weight: 490;
+}
+
+.footer-bottom{
+    margin-top: 8%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper p {
+    color: #000;
+    font-size: 16px;
+    width: 80%;
+    font-family: "Inter", sans-serif;
+}
+
+.footer_menu_links_inativos{
+    color: #515A5A;
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+}
 /*Responsividade*/
 
 /*Barra de Navegação*/
@@ -946,108 +994,124 @@ footer .wrapper::after{
     }}
 
 
-    /*Rodapé*/
+  /*Footer: Responsividade*/
 
-    @media (max-width:900px){
+@media (max-width:900px){
 
-
-        footer{
-            background-color: #ECECEC;
-            padding-top: 2em;
-            padding-bottom: 40px;
-            margin-top: 10%;
-            border-top: 5px solid #2A9B39;
-            font-family: "Inter", sans-serif;
-            display: block;
-        }
-
-        .wrapper{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-logo{
-            height: 40px;
-        }
-
-        .footer-p{
-            font-size: 15px;
-            width: 100%;
-        }
-
-        footer h2, footer p, footer a{
-            color: #000;   
-        }
-        footer h2{
-            font-weight: 500;
-            font-size: 25px;
-        }
-        footer a{
-            text-decoration: none;
-        }
-        footer ul{
-            padding: 0;
-        }
-        footer li{
-            list-style: none;
-        }
-        .footer-box{
+    .footer_rodape{
+        background-color: #ECECEC;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        column-width: 100%;
+    }
     
-            width: 100%;
-            padding: 3%;
-            float: left;
-            
-        }
-        .twitter-timeline {
-            margin-left: 60px;
-            margin-bottom: 100px;
-        
-        }
-        footer .wrapper::after{
-            clear: both;
-            content: "";
-            display: block;
-        }
-        .company-footer{
-            width: 100%;
-        }
-        .company-footer h2{
-            margin-top: 20px;
-        }
-        .company-footer h2, .company-footer p{
-            margin-bottom: 20px;
-        }
-        .company-footer .footer-list a{
-            font-size: 25px;   
-            padding: 0 2px;
-            
-        }
-        .footer-list li{
-            margin-bottom: 1px;
-        }
-        .footer-list a{
-            transition: 0.5s;
-        }
-        .footer-list a:hover{
-            color: #2A9B39;
-        }
-        .footer-list li::after{
-            clear: both;
-            content: "";
-            display: block;
-        }
-        .menu-footer{
-            width: 80%;
-            margin-left: 100px;
-        }
-        .footer-bottom{
-            border-top: 1px solid #000;
-        }
-        .footer-bottom p{
-            font-size: 14px;
-            font-weight: 600;
-            margin-top: 30px;
-        }
-
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        column-gap: 90px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .rodape_logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo_footer{
+        height: 40px;
+    }
+    
+    .footer_horizontal{
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    
+    .rodape_logo_texto{
+        font-size: 13px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        width: 60%;
+        margin-top: -4%;
+        text-align: center;
+        color: #000;
+    }
+    
+    .footer_redes{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    
+    .redes_icon{
+        height: 80px;
+    }
+    
+    .footer_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        margin-left: 65px;
+        padding-bottom: 10%;
+    }
+    
+    .footer_menu_h3{
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    .footer_menu_links{
+        text-decoration: none;
+        font-family: "Inter",sans-serif;
+        font-size: 13px;
+        color: #000;
+    }
+    
+    .footer_contato{
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .footer_contato-texto{
+        color: #000;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .footer_horizontal .footer_contato-titulo{
+        color: #000;
+        font-size: 20px;
+        font-weight: 490;
+        text-align: center;
+    }
+    
+    .footer-bottom{
+        margin-top: 8%;
+        padding-left: 10%;
+        width: 100%;
+    }
+    
+    .wrapper {
+        width: 100%;
+    }
+    
+    .wrapper p {
+        color: #000;
+        font-size: 10px;
+        width: 80%;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+    }
+    
     }
