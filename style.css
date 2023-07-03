@@ -570,9 +570,6 @@ transform: translateX(0);
     color: black;
 }
 
-
-
-
 /*import*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
@@ -581,12 +578,12 @@ transform: translateX(0);
 .footer_rodape{
     background-color: #ECECEC;
     width: 100%;
-    display: flex;
+    display: absolute;
     flex-direction: column;
     align-items: start;
-    position: absolute;
     bottom: 0;
-    clear: both;
+   
+    overflow: hidden;
 }
 
 .rodape{
@@ -656,6 +653,14 @@ transform: translateX(0);
     font-family: "Inter",sans-serif;
     font-size: 13px;
     color: #000;
+    cursor: pointer;
+}
+
+.footer_menu_links:hover{
+    color: #2A9B39;
+}
+.footer_menu_links_inativos:hover{
+    color: #2A9B39;
 }
 
 .footer_contato{
@@ -689,6 +694,12 @@ transform: translateX(0);
     font-family: "Inter", sans-serif;
 }
 
+.footer_menu_links_inativos{
+    color: #515A5A;
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+}
 /*Responsividade: Celular*/
 /*Navbar*/
 
@@ -896,24 +907,6 @@ transform: translateX(0);
         width: 576px;
         overflow: hidden;
     }
-
-    .footer-box{
-        margin-right: 50px;
-        margin-left: 10px;
-        width: 550px;
-    }
-    .menu-footer{
-        margin-left: 4px;
-    }
-    .footer-bottom{
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        width: 500px;
-        margin-left: 5px;
-    }
-     
-
 
     #jardim-photo{
         display: none;
@@ -1229,11 +1222,6 @@ transform: translateX(0);
 
 @media (max-width:900px){
 
-    footer{
-        align-items: center;
-    }
-
-
     .footer_rodape{
         background-color: #ECECEC;
         width: 100%;
@@ -1334,7 +1322,7 @@ transform: translateX(0);
     
     .footer-bottom{
         margin-top: 8%;
-        padding-left: 21%;
+        padding-left: 10%;
         width: 100%;
     }
     
@@ -1350,5 +1338,4 @@ transform: translateX(0);
         font-family: "Inter", sans-serif;
     }
     
-
 }
