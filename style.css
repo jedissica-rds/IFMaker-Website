@@ -294,6 +294,11 @@ transform: translateX(0);
   .slide-container {
     margin: 0 30px;
     overflow: hidden;
+    text-decoration: none;
+  }
+
+  .profile-details a:-webkit-any-link{
+    text-decoration: none;
   }
   .card {
     background: #fff;
@@ -321,15 +326,18 @@ transform: translateX(0);
   .profile-details .name-job .name {
     font-size: 15px;
     font-weight: 500;
+    text-decoration: none;
   }
 
   h3.name{
     color: #000;
+    text-decoration: none;
   }
   .profile-details .job {
     font-size: 12px;
     font-weight: 500;
     color: #4d4d4d;
+    text-decoration: none;
   }
   .swiper-navBtn {
     color: #000;
@@ -360,6 +368,7 @@ transform: translateX(0);
     width: 40%;
     text-align: center;
     padding: 15px;
+
 }
 
 
@@ -461,9 +470,30 @@ transform: translateX(0);
     display: none;
 }
 
+.tema-redes{
+    text-align: center;
+}
+
+.tema-redes h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-left: 0%;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2A9B39;
+    margin-top: 5%;
+}
+
 .redes{
     padding: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    margin-left: 0%;
 }
+
 
 #tiktok-anchor{
     font-family: Helvetica, sans-serif;
@@ -479,12 +509,27 @@ transform: translateX(0);
 }
 
 .redes-border{
-    height: 507px;
-    padding: 18px;
+    height: 100%;
+    padding: 10px;
     border: 1px;
     border-style: solid;
     border-color: #d0d0d0;
     border-radius: 3.5%;
+}
+
+.tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+
 }
 
 .tiktok-border{
@@ -493,8 +538,10 @@ transform: translateX(0);
     border-color: #d0d0d0;
 }
 
-.redes-sociais-table{
-    margin-left: 20px;
+.grbUXA, .grbUXA * {
+    box-sizing: border-box !important;
+    outline: none !important;
+    color: black;
 }
 
 .Ellipsis__Wrapper-sc-1b8wrxx-0.iiaTXH.User__Name-sc-1b0vs6-2.kVApTS {
@@ -531,12 +578,12 @@ transform: translateX(0);
 .footer_rodape{
     background-color: #ECECEC;
     width: 100%;
-    display: flex;
+    display: absolute;
     flex-direction: column;
     align-items: start;
-    position: absolute;
     bottom: 0;
-    clear: both;
+   
+    overflow: hidden;
 }
 
 .rodape{
@@ -606,6 +653,14 @@ transform: translateX(0);
     font-family: "Inter",sans-serif;
     font-size: 13px;
     color: #000;
+    cursor: pointer;
+}
+
+.footer_menu_links:hover{
+    color: #2A9B39;
+}
+.footer_menu_links_inativos:hover{
+    color: #2A9B39;
 }
 
 .footer_contato{
@@ -639,6 +694,12 @@ transform: translateX(0);
     font-family: "Inter", sans-serif;
 }
 
+.footer_menu_links_inativos{
+    color: #515A5A;
+    text-decoration: none;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+}
 /*Responsividade: Celular*/
 /*Navbar*/
 
@@ -846,24 +907,6 @@ transform: translateX(0);
         width: 576px;
         overflow: hidden;
     }
-
-    .footer-box{
-        margin-right: 50px;
-        margin-left: 10px;
-        width: 550px;
-    }
-    .menu-footer{
-        margin-left: 4px;
-    }
-    .footer-bottom{
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        width: 500px;
-        margin-left: 5px;
-    }
-     
-
 
     #jardim-photo{
         display: none;
@@ -1179,11 +1222,6 @@ transform: translateX(0);
 
 @media (max-width:900px){
 
-    footer{
-        align-items: center;
-    }
-
-
     .footer_rodape{
         background-color: #ECECEC;
         width: 100%;
@@ -1284,7 +1322,7 @@ transform: translateX(0);
     
     .footer-bottom{
         margin-top: 8%;
-        padding-left: 21%;
+        padding-left: 10%;
         width: 100%;
     }
     
@@ -1300,5 +1338,4 @@ transform: translateX(0);
         font-family: "Inter", sans-serif;
     }
     
-
 }
