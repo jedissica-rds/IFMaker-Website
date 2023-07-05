@@ -57,37 +57,33 @@ nav ul li a:hover {
 /*Título e Descrição*/
 
 .projeto_descricao{
-    padding-top: 150px;
+    padding-top: 10%;
 }
 
 .titulo_projeto {
     text-align: center;
-}
-
-.reta-horizontal{
-
-    display: block;
-    margin-top: 0.4em;
-    margin-bottom: 0.5em;
-    opacity: 100%;
-    margin-left: 470px;
-    margin-right: 470px;
-    border-style: solid;
-    border-width: 1.9px;
-    border-color:#61AD6B;
-}
-
-.reta-horizontal-mobile{
-        display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subtitulo_projeto{
-    margin-left: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.subtitulo_p{
+    padding-top: 2%;
+    text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .subtitulo{
-    padding-top: 8px;
-    width: 580px;
+    padding-top: 2%;
+    width: 60%;
     color: #7B7B7B;
     text-align: center;
     font-family: "Arimo";
@@ -95,6 +91,22 @@ nav ul li a:hover {
     font-weight: 350;
     font-size: 14px;
 }
+
+.titulo-descricao{
+    text-align: center;
+    border-bottom: 2px solid #2A9B39;
+    width: fit-content;
+    margin: auto;
+}
+
+.titulo-descricao-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .projeto-content{
     display: inline-flex;
@@ -161,7 +173,7 @@ nav ul li a:hover {
 /*Equipe do Projeto*/
 
 .equipe-projeto{
-    margin-bottom: 35px;
+    margin-bottom: 10%;
 }
 
 .highlight-bold{
@@ -230,33 +242,21 @@ nav ul li a:hover {
             margin-top: 70px;
         }
 
-        .reta-horizontal-pequena{
-            display: inline-block;
-            margin-top: 0.4em;
-            margin-bottom: 0.5em;
-            opacity: 100%;
-            width: 50px;
-            margin-right: 8px;
-            border-style: solid;
-            border-width: 1.9px;
-            border-color:#61AD6B;
-        }
-
         .equipe-titulo-h2{
             display: inline-block;
-            margin-left: 0px;
+            margin-left: 3%;
         }
 
         .reta-horizontal-grande{
-            display: inline-block;
+            display: iblock;
             margin-top: 0.4em;
             margin-bottom: 0.5em;
             opacity: 100%;
-            width: 700px;
-            margin-left: 10px;
+            width: 100%;
+            margin-left: 0px;
             margin-right: 0px;
             border-style: solid;
-            border-width: 1.9px;
+            border-width: 1px;
             border-color:#61AD6B;
 
         }
@@ -299,10 +299,6 @@ nav ul li a:hover {
 
 /*Galeria do Projeto*/
 
-.galeria-titulo-h2{
-    color: black;
-}
-
 .galeria-titulo{
     white-space: nowrap;
     overflow-x: auto;
@@ -310,20 +306,10 @@ nav ul li a:hover {
     margin-top: 70px;
 }
 
-.reta-horizontal-pequena-teste{
-    display: inline-block;
-    margin-top: 0.4em;
-    margin-bottom: 0.5em;
-    opacity: 100%;
-    width: 700px;
-    border-style: solid;
-    border-width: 1.9px;
-    border-color:#61AD6B;
-}
-
 .galeria-titulo-h2{
     display: inline-block;
-    margin-left: 0px;
+    margin-left: 3%;
+    color: #000;
 }
 
 .reta-horizontal-grande-teste{
@@ -348,6 +334,7 @@ nav ul li a:hover {
 .grid-galeria{
     margin-top: 70px;
     display: grid;
+    margin-bottom: 8%;
     grid-template-columns: auto auto auto;
     text-align: center;
 }
@@ -540,9 +527,6 @@ footer .wrapper::after{
 
 @media (max-width:900px){
 
-    .projeto_descricao{
-        padding-top: 150px;
-    }
     
     .titulo_projeto {
         width: 100%;
@@ -551,16 +535,15 @@ footer .wrapper::after{
 
     .titulo-descricao{
         text-align: center;
-        width:max-content;
-        position: absolute;
-        left: 30%;
-        right: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        border-bottom: 2px solid #2A9B39;
+        width: fit-content;
+        margin: auto;
     }
 
     .titulo-descricao-div{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -585,18 +568,16 @@ footer .wrapper::after{
     }
     
     .subtitulo_projeto{
-        margin-left: 40px;
-        margin-right: auto;
+        margin: auto;
         text-align: center;
-        width: 100%;
+        padding-top: 2%;
+        width: fit-content;
     }
     
     .subtitulo{
-        position: absolute;
-        right: 82%;
-        left: 18%;
-        padding-top: 68px;
-        width: 400px;
+        margin: auto;
+        text-align: center;
+        width: 70%;
         color: #7B7B7B;
         text-align: center;
         font-family: "Arimo";
@@ -610,7 +591,6 @@ footer .wrapper::after{
     }
     
     .projeto-descricao{
-        padding-top: 25px;
         padding-bottom: 35px;
         margin-bottom: 100px;
         margin-left: 0%;
@@ -633,7 +613,6 @@ footer .wrapper::after{
     }
     
     .projeto-descricao-content{
-        margin-top: 160px;
         margin-left: 30px;
     }
     
@@ -641,7 +620,7 @@ footer .wrapper::after{
         font-size: 20px;
     }
     .projeto-texto{
-        width: 450px;
+        width: 95%;
         font-size: 15px;
     }
 
@@ -716,6 +695,7 @@ footer .wrapper::after{
         display: grid;
         grid-template-columns: auto auto auto;
         margin-top: -20px;
+        align-items: center;
     }
     
     .grid-item{
@@ -733,17 +713,20 @@ footer .wrapper::after{
         position: relative;
         left: 20%;
         top: 20px;
+        text-align: center;
     }
     
     .equipe-membro-nome{
         font-family: "Arimo", sans-serif;
         font-weight: bold;
         font-size: 15px;
+        text-align: center;
     }
     
     .equipe-ocupacao{
         font-weight: 400;
         font-size: 11px;
+        text-align: center;
     }
     
             /*Título: Equipe*/
@@ -754,34 +737,22 @@ footer .wrapper::after{
                 margin-top: 70px;
                 font-size: 15px;
             }
-    
-            .reta-horizontal-pequena{
-                display: inline-block;
-                margin-top: 0.4em;
-                margin-bottom: 0.5em;
-                opacity: 100%;
-                width: 50px;
-                margin-right: 8px;
-                border-style: solid;
-                border-width: 1.9px;
-                border-color:#61AD6B;
-            }
+
     
             .equipe-titulo-h2{
                 display: inline-block;
-                margin-left: 0px;
-                font-size: 22px;
+                margin-left: 5%;
+                font-size: 25px;
             }
     
             .reta-horizontal-grande{
-                display: inline-block;
+                display: block;
                 margin-top: 0.4em;
                 margin-bottom: 0.5em;
                 opacity: 100%;
-                width: 20%;
-                text-align: end;
-                margin-left: 10px;
-                margin-right: 0px;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
                 border-style: solid;
                 border-width: 1.9px;
                 border-color:#61AD6B;
@@ -792,7 +763,7 @@ footer .wrapper::after{
     
             .equipe-coordenadores{
                 margin-top: 60px;
-                margin-left: 60px;
+                margin-left: 20px;
             }
     
             .coordenadores-titulo-h3{
@@ -800,6 +771,7 @@ footer .wrapper::after{
                 font-size: 18px;
                 opacity: 70%;
                 margin-left: 2px;
+                margin-top: -5%;
             }
     
             .underline-coordenadores{
@@ -809,7 +781,7 @@ footer .wrapper::after{
     
             .equipe-estudantes{
                 margin-top: 60px;
-                margin-left: 60px;
+                margin-left: 20px;
             }
     
             .estudantes-titulo-h3{
@@ -851,8 +823,8 @@ footer .wrapper::after{
     
     .galeria-titulo-h2{
         display: inline-block;
-        margin-left: 0px;
-        font-size: 22px;
+        margin-left: 5%;
+        font-size: 25px;
     }
     
     .reta-horizontal-grande-teste{
@@ -883,65 +855,92 @@ footer .wrapper::after{
         display: grid;
         grid-template-columns: auto auto auto;
         text-align: center;
+        margin-bottom: 10%;
     }
 
 }
 
 @media (max-width:900px){
 
-    .equipe-titulo-h2{
-        font-size: 19px;
-    }
-
-    .reta-horizontal-grande-equipamento{
-        display: inline-block;
-        margin-top: 0.4em;
-        margin-bottom: 0.5em;
-        opacity: 100%;
-        width: 12%;
-        margin-left: 10px;
-        margin-right: 0px;
-        border-style: solid;
-        border-width: 1.9px;
-        border-color:#61AD6B;
-    }
-
-    .reta-horizontal-pequena-equipamento{
-        display: none;
-    }
-    .reta-horizontal-pequena-mobile{
-            display: inline-block;
-            margin-top: 0.4em;
-            margin-bottom: 0.5em;
-            opacity: 100%;
-            width: 8%;
-            margin-right: 8px;
-            border-style: solid;
-            border-width: 1.9px;
-            border-color:#61AD6B;
-
+    .equipamentos-titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -4%;
     }
     
-    .item-text-equipamento{
-        display: inline-block;
-        position: relative;
-        left: 15px;
-        top: 5px;
+    p .equipamentos-subtitulo{
+        color: black;
+        font-family: "Cabin", sans-serif;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+        margin-top: -2%;
     }
     
-    .equipamento-nome{
-        font-family: "Arimo", sans-serif;
-        font-size: 13px;
-    }
-    
-    .equipamento-imagem{
-        border-radius: 100%;
-        height: 120px;
+    .equipamentos-h2{
+        color: #2A9B39;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 15%;
     }
     
     .equipamento-grid{
-        margin-top: 30px;
-        text-align: center;
+        display: grid;
+        grid-template-columns: auto ;
+        justify-content: center;
+        align-content: center;
+        column-gap: 25px;
+        row-gap: 1px;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 3%;
+    }
+    
+    .equipamento-grid .equipamento-card{
+        background-color: white ;
+        box-shadow: 1px 1px 5px #b1b1b1;
+        width: 360px;
+        margin-bottom: 10%;
+    }
+    
+    .equipamento-card-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        top: 25%;
+        margin-left: 50%;
+    }
+    
+    .equipamentos-img{
+        border-radius: 100%;
+        height: 120px;
+        float: left;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
+    
+    .equipamento-card-titulo{
+        color: #1f1f1f;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: "Cabin", sans-serif;
+    }
+    
+    .equipamento-card-descricao{
+        color: #474747;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Cabin", sans-serif;
+    }
+    
+    
+    .equipamentos-img-div{
+        margin-left: 0%;
     }}
 
 
