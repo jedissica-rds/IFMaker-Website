@@ -609,6 +609,11 @@ div .card{
 /*Barra de Navegação: Responsividade*/
 
 @media (max-width:900px){
+
+    .logo{
+        height: 75px;;
+    }
+
     .nav-bar .links{
         display: none;
     }
@@ -723,7 +728,8 @@ div .card{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 40px;
+        margin-bottom: 90px;
+
     }
     
     .colaboradores{
@@ -771,7 +777,7 @@ div .card{
         justify-content: center;
         align-content: center;
         column-gap: 10px;
-        row-gap: 10px;
+        row-gap: 100px;
     }
     
     /*Cards*/
@@ -788,7 +794,7 @@ div .card{
     }
     
     .card .card-img-overlay{
-        margin-top: 36%;
+        margin-top: 66%;
         text-shadow: 1px 1px 3px rgb(44, 43, 43);
         border-radius: 30px;
     }
@@ -953,6 +959,7 @@ div .card{
         font-size: 13px;
         text-align: center;
         font-weight: 400;
+        width: 80%;
         letter-spacing: 1px;
         padding-bottom: 20px;
         margin-top: -2%;
