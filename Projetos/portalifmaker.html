@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portalifmaker.css">
+    <link rel="stylesheet" href="/Projetos/portalifmaker.css">
+    <link rel="stylesheet" href="/Projetos/portalifmaker.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--<link rel="stylesheet" href="cultura_maker.css">-->
+    <link rel="stylesheet" href="/cultura_maker.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Inter&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Projeto: Portal IFMaker</title>
+    <title>Projeto #1</title>
 </head>
 <body>
 
@@ -20,34 +21,40 @@
         <div class="div-gen">
             <nav class="border-bottom fixed-top">
                 <navbar class=" border-bottom nav-bar">
-                
-                    <a href="/homepage.html">
-                        <img class="logo" src="/images/testelogo.png" height="100">
-                    </a>
-
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
-                <ul class="nav_links">
+      
+                <a href="/homepage.html">
+                  <img class="logo" src="/images/testelogo.png" height="120">
+                </a>
+      
+                <ul class="links">
                     <li><a href="/about_us.html">SOBRE</a></li>
                     <li><a href="/projetos.html">PROJETOS</a></li>
                     <li><a href="/cultura_maker.html">CULTURA MAKER</a></li>
                     <li><a href="#" class="inactive">NOTÍCIAS</a></li>
                     <li><a href="#" class="inactive">ARTIGOS</a></li>
                 </ul>
-
+      
                 <div class="btns">
-                <a href="#"> <button type="button" class="btn btn-outline-success botao-entrar">ENTRAR</button></a>
+                <a href="#" id="button_anchor"> <button type="button" class="btn btn-outline-success botao-entrar">ENTRAR</button></a>
                 <button class="botao-pesquisa"><img src="/images/pesquisa-icon.png" height="20"></button>
                 </div>
-
+      
+                <div class="toggle_btn"><i class="fa-solid fa-bars" style="color: #24ad46;"></i></div>
+        </div>
+      
+        <div class="dropdown_menu">
+                <li class="drop_menu"><a href="about_us.html">SOBRE</a></li>
+                <li class="drop_menu"><a href="projetos.html">PROJETOS</a></li>
+                <li class="drop_menu"><a href="cultura_maker.html">CULTURA MAKER</a></li> 
+                <li class="drop_menu"><a href="#" class="inactive">NOTÍCIAS</a></li>
+                <li class="drop_menu"><a href="#" class="inactive">ARTIGOS</a></li>
+        </div>
+      
+      
                 </navbar>
             </nav>
         </div>
-    </header>
+      </header>
 
     <!--Título e Descrição-->
 
@@ -56,11 +63,9 @@
             <div class="titulo-descricao-div">
             <div class="titulo-descricao">
                 <h2 class="titles titulo_projeto">PORTAL IFMAKER</h2>
-                <hr class="reta-horizontal">
-                <hr class="reta-horizontal-mobile">
             </div>
             <div class="subtitulo_projeto">
-                <p class="subtitulo"><i>Um portal para aprender fazendo.</i></p>
+                <p class="subtitulo_p"><i class="subtitulo">Um portal para aprender fazendo.</i></p>
             </div>
             </div>
                 <div class="projeto-content">
@@ -77,14 +82,14 @@
 
             <div class="projeto-content-mobile">
                 <div class="projeto-descricao-mobile">
-                  <img class="projeto-imagem-mobile" src="images/imagens-proj/IFMAKER-CAPA">
+                  <img class="projeto-imagem-mobile" src="/images/imagens-proj/capas/IFMAKER-CAPA.png">
                 <div class="projeto-imagem-background-mobile"></div>
             </div>
 
             <div class="projeto-resultados-esperados">
                 <h3 class="titles resultados-titulo">RESULTADOS <span class="highlight">ESPERADOS</span></h3>
-                <p class="resultado-texto"> Tendo vista o objetivo principal desse projeto, é esperado ter como resultado 
-                    final o website completo, ou seja, o site do Portal IFMaker com Front-end e Back-end concluídos. </p>
+                <p class="resultado-texto">Tendo vista o objetivo principal desse projeto, é esperado ter como resultado 
+                  final o website completo, ou seja, o site do Portal IFMaker com Front-end e Back-end concluídos.</p>
             </div>
 
             <div class="projeto-resultados-alcancados">
@@ -100,15 +105,13 @@
         <div class="equipe-projeto">
 
             <div class="equipe-titulo">
-                <hr class="reta-horizontal-pequena">
-                <h2 class="titles equipe-titulo-h2">EQUIPE DO <span class="highlight-bold">PORTAL IFMAKER</span></h2>
+                <h2 class="titles equipe-titulo-h2">EQUIPE DO <span class="highlight-bold">JARDIM SENSORIAL</span></h2>
                 <hr class="reta-horizontal-grande">
             </div>
 
             <div class="equipe-coordenadores">
                 <div class="coordenadores-titulo">
-                    <h3 class="titles coordenadores-titulo-h3"><i>COORDENADOR</i></h3>
-                    <hr class="underline underline-coordenadores">
+                    <h3 class="titles coordenadores-titulo-h3"><i>Coordenadores</i></h3>
                 </div>
 
                 <div class="grid">
@@ -116,7 +119,7 @@
                         <img src="/images/imagens-proj/antonio2-ft.png" class="item-imagem">
                         <div class="item-text">
                             <h3 class="titles equipe-membro-nome">ANTÔNIO FERREIRA</h3>
-                            <p class="equipe-ocupacao">Coordenador do projeto</p>
+                            <p class="equipe-ocupacao">Coordenador do Projeto</p>
                         </div>
                     </div>
                 </div>
@@ -124,8 +127,7 @@
 
             <div class="equipe-estudantes">
                 <div class="estudantes-titulo">
-                    <h3 class="titles estudantes-titulo-h3"><i>PARTICIPANTES</i></h3>
-                    <hr class="underline underline-estudantes">
+                    <h3 class="titles estudantes-titulo-h3"><i>Estudantes</i></h3>
                 </div>
 
                 <div class="grid">
@@ -133,15 +135,7 @@
                         <img src="/images/imagens-proj/jessica.jpg" class="item-imagem">
                         <div class="item-text">
                             <h3 class="titles equipe-membro-nome">JESSICA RODRIGUES</h3>
-                            <p class="equipe-ocupacao">Desenvolvedora Front-end</p>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="/images/imagens-proj/nayara.jpg" class="item-imagem">
-                        <div class="item-text">
-                            <h3 class="titles equipe-membro-nome">NAYARA CORREIA</h3>
-                            <p class="equipe-ocupacao">Desenvolvedora Front-end</p>
+                            <p class="equipe-ocupacao">Desenvolvedora Front-End</p>
                         </div>
                     </div>
 
@@ -149,7 +143,15 @@
                         <img src="/images/imagens-proj/sophia.jpg" class="item-imagem">
                         <div class="item-text">
                             <h3 class="titles equipe-membro-nome">SOPHIA GUEDES</h3>
-                            <p class="equipe-ocupacao">Desenvolvedora Front-end</p>
+                            <p class="equipe-ocupacao">Desenvolvedora Front-End</p>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img src="/images/imagens-proj/nayara.jpg" class="item-imagem">
+                        <div class="item-text">
+                            <h3 class="titles equipe-membro-nome">NAYARA CORREIA</h3>
+                            <p class="equipe-ocupacao">Desenvolvedora Front-End</p>
                         </div>
                     </div>
                 </div>
@@ -157,17 +159,18 @@
         </div>
     </section>
 
-    
 
     <!-- EQUIPAMENTOS -->
     <section>
 
         <div class="equipamentos">
 
+            <hr class="reta-horizontal-grande">
+
           <div class="equipamentos-titulo">
             
             <h2 class="equipamentos-h2">NOSSO EQUIPAMENTO</h2>
-            <p><i class="equipamentos-subtitulo">Durante o denvolvimento do projeto, os seguintes materiais são utilizados: </i></p>
+            <p><i class="equipamentos-subtitulo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque</i></p>
     
           </div>
     
@@ -196,23 +199,18 @@
                 </div>
               </div>
             </div>
-               
-                
-              </div>
-            </div>
           </div>
 
         </div>
 
       </section>
 
-
- <!--rodapé-->
- <footer class="footer_rodape">
+              <!--RODAPÉ-->
+              <footer class="footer_rodape">
     <div class="rodape">
       
       <div class="rodape_logo">
-       <img src="logo.png" class="logo_footer">
+        <img src="/images/logo.png" class="logo_footer">
         <br>
         <p class="rodape_logo_texto">Um espaço voltado à criatividade, ao aprendizado, à inovação e tecnologia no IFAM-CMC.</p>
         <div class="footer_redes">
@@ -267,5 +265,9 @@
   </div>
 </footer>
 
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="navbar.js"></script>
+    
 </body>
 </html>

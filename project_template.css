@@ -57,7 +57,7 @@ nav ul li a:hover {
 /*Título e Descrição*/
 
 .projeto_descricao{
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 .titulo_projeto {
@@ -110,6 +110,10 @@ nav ul li a:hover {
 
 .projeto-content{
     display: inline-flex;
+}
+
+.subtitulo_p{
+    width: 80%;
 }
 
 .projeto-descricao{
@@ -167,7 +171,7 @@ nav ul li a:hover {
 .resultado-texto-alcancado{
     text-align: right;
     width: 580px;
-    margin-left: 610px;
+    margin-left: 52%;
 }
 
 /*Equipe do Projeto*/
@@ -374,6 +378,7 @@ nav ul li a:hover {
     margin-left: 7%;
     margin-right: 7%;
     margin-top: 3%;
+    margin-bottom: -10%;
 }
 
 .equipamento-grid .equipamento-card{
@@ -423,7 +428,7 @@ nav ul li a:hover {
 /*footer*/
 footer{
     background-color: #ECECEC;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 40px;
     margin-top: 10%;
     border-top: 5px solid #2A9B39;
@@ -507,19 +512,46 @@ footer .wrapper::after{
 /*Barra de Navegação*/
 
 @media (max-width:900px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger .bar{
-        color: black;
-        width: 20px;
-        height: 10px;
-        display: block;
-    }
-
-    .nav_links{
+    .nav-bar .links{
         display: none;
+    }
+    
+    .nav-bar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display:block;
+        right: 0%;
+        width: 60%;
+        border-top: 1px solid #ECECEC;
+        border-left: 1px solid #ECECEC;
+        border-right: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        z-index: 3;
+    }
+
+    .dropdown_menu{
+        left: 0;
+        right: 0;
+        width: unset;
+    }
+
+    .botao-pesquisa{
+        background-color: white;
+        border: 0px;
+        padding-left: 10px;
+    }
+
+    .btns .botao-entrar{
+        height: 30px;
+        font-size: 12px;
+        font-family: "Inter", sans-serif;
+
+    }
+
+    .btns{
+        margin-right: -160px;
     }
 }
 
@@ -530,6 +562,7 @@ footer .wrapper::after{
     
     .titulo_projeto {
         width: 100%;
+        margin-top: 30%;
         text-align: center;
     }
 
@@ -573,11 +606,15 @@ footer .wrapper::after{
         padding-top: 2%;
         width: fit-content;
     }
+
+    .subtitulo_p{
+        width: 80%;
+    }
     
     .subtitulo{
         margin: auto;
         text-align: center;
-        width: 70%;
+        width: 100%;
         color: #7B7B7B;
         text-align: center;
         font-family: "Arimo";
@@ -691,6 +728,7 @@ footer .wrapper::after{
     .reta-horizontal-grande{
         display: none;
     }
+
     .grid{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -700,27 +738,34 @@ footer .wrapper::after{
     
     .grid-item{
         margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .item-imagem{
         border-radius: 100%;
         height: 140px;
-        padding: 15px;
+        padding: 10%;
+        align-items: center;
     }
     
     .item-text{
-        display: inline-block;
-        position: relative;
-        left: 20%;
-        top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        position:relative;
+        left: 0px;
     }
     
     .equipe-membro-nome{
         font-family: "Arimo", sans-serif;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .equipe-ocupacao{
@@ -765,11 +810,18 @@ footer .wrapper::after{
                 margin-top: 60px;
                 margin-left: 20px;
             }
+
+            .coordenadores-titulo{
+                border-bottom: 2px solid #2A9B39;
+                width: fit-content;
+                opacity: 90%;
+            }
     
             .coordenadores-titulo-h3{
-                color: #7B7B7B;
+                color: #525252;
                 font-size: 18px;
                 opacity: 70%;
+                font-family: "Cabin", sans-serif;
                 margin-left: 2px;
                 margin-top: -5%;
             }
@@ -783,6 +835,12 @@ footer .wrapper::after{
                 margin-top: 60px;
                 margin-left: 20px;
             }
+
+            .estudantes-titulo{
+                border-bottom: 2px solid #2A9B39;
+                width: fit-content;
+                opacity: 90%;
+            }
     
             .estudantes-titulo-h3{
                 color: #7B7B7B;
@@ -790,11 +848,7 @@ footer .wrapper::after{
                 opacity: 70%;
                 margin-left: 4px;
             }
-    
-            .underline-estudantes{
-                width: 30%;
-                margin-top: -3px;
-            }
+
 }
 
 @media (max-width:900px){
