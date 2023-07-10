@@ -509,6 +509,10 @@ footer .wrapper::after{
 
 /*Responsividade*/
 
+.titles{
+    font-size: 20px;
+}
+
 /*Barra de Navegação*/
 
 @media (max-width:900px){
@@ -855,6 +859,7 @@ footer .wrapper::after{
 
     .galeria-titulo-h2{
         color: black;
+        font-size: 20px;
     }
     
     .galeria-titulo{
@@ -878,7 +883,6 @@ footer .wrapper::after{
     .galeria-titulo-h2{
         display: inline-block;
         margin-left: 5%;
-        font-size: 25px;
     }
     
     .reta-horizontal-grande-teste{
